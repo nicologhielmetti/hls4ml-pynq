@@ -1,0 +1,330 @@
+
+
+================================================================
+== Vivado HLS Report for 'myproject_axi'
+================================================================
+* Date:           Tue Mar 23 18:08:15 2021
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 5.00 ns | 6.982 ns |   0.62 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      281|      281| 1.962 us | 1.962 us |  281|  281|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 24
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%in_local_V = alloca i256, align 8" [firmware/myproject_axi.cpp:16]   --->   Operation 25 'alloca' 'in_local_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%out_local_0 = alloca i16, align 2"   --->   Operation 26 'alloca' 'out_local_0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%out_local_1 = alloca i16, align 2"   --->   Operation 27 'alloca' 'out_local_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%out_local_2 = alloca i16, align 2"   --->   Operation 28 'alloca' 'out_local_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%out_local_3 = alloca i16, align 2"   --->   Operation 29 'alloca' 'out_local_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%out_local_4 = alloca i16, align 2"   --->   Operation 30 'alloca' 'out_local_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%empty = call { i16, i1 } @_ssdm_op_Read.axis.volatile.i16P.i1P(i16* %in_data_V, i1* %in_last)" [firmware/myproject_axi.cpp:4]   --->   Operation 31 'read' 'empty' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%in_data_V_val = extractvalue { i16, i1 } %empty, 0" [firmware/myproject_axi.cpp:4]   --->   Operation 32 'extractvalue' 'in_data_V_val' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%empty_28 = call { i16, i1 } @_ssdm_op_Read.axis.volatile.i16P.i1P(i16* %in_data_V, i1* %in_last)" [firmware/myproject_axi.cpp:4]   --->   Operation 33 'read' 'empty_28' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%in_data_V_val1 = extractvalue { i16, i1 } %empty_28, 0" [firmware/myproject_axi.cpp:4]   --->   Operation 34 'extractvalue' 'in_data_V_val1' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%empty_29 = call { i16, i1 } @_ssdm_op_Read.axis.volatile.i16P.i1P(i16* %in_data_V, i1* %in_last)" [firmware/myproject_axi.cpp:4]   --->   Operation 35 'read' 'empty_29' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%in_data_V_val3 = extractvalue { i16, i1 } %empty_29, 0" [firmware/myproject_axi.cpp:4]   --->   Operation 36 'extractvalue' 'in_data_V_val3' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%empty_30 = call { i16, i1 } @_ssdm_op_Read.axis.volatile.i16P.i1P(i16* %in_data_V, i1* %in_last)" [firmware/myproject_axi.cpp:4]   --->   Operation 37 'read' 'empty_30' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%in_data_V_val5 = extractvalue { i16, i1 } %empty_30, 0" [firmware/myproject_axi.cpp:4]   --->   Operation 38 'extractvalue' 'in_data_V_val5' <Predicate = true> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 39 [1/1] (0.00ns)   --->   "%empty_31 = call { i16, i1 } @_ssdm_op_Read.axis.volatile.i16P.i1P(i16* %in_data_V, i1* %in_last)" [firmware/myproject_axi.cpp:4]   --->   Operation 39 'read' 'empty_31' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 40 [1/1] (0.00ns)   --->   "%in_data_V_val7 = extractvalue { i16, i1 } %empty_31, 0" [firmware/myproject_axi.cpp:4]   --->   Operation 40 'extractvalue' 'in_data_V_val7' <Predicate = true> <Delay = 0.00>
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 41 [1/1] (0.00ns)   --->   "%empty_32 = call { i16, i1 } @_ssdm_op_Read.axis.volatile.i16P.i1P(i16* %in_data_V, i1* %in_last)" [firmware/myproject_axi.cpp:4]   --->   Operation 41 'read' 'empty_32' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_6 : Operation 42 [1/1] (0.00ns)   --->   "%in_data_V_val9 = extractvalue { i16, i1 } %empty_32, 0" [firmware/myproject_axi.cpp:4]   --->   Operation 42 'extractvalue' 'in_data_V_val9' <Predicate = true> <Delay = 0.00>
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 43 [1/1] (0.00ns)   --->   "%empty_33 = call { i16, i1 } @_ssdm_op_Read.axis.volatile.i16P.i1P(i16* %in_data_V, i1* %in_last)" [firmware/myproject_axi.cpp:4]   --->   Operation 43 'read' 'empty_33' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_7 : Operation 44 [1/1] (0.00ns)   --->   "%in_data_V_val2 = extractvalue { i16, i1 } %empty_33, 0" [firmware/myproject_axi.cpp:4]   --->   Operation 44 'extractvalue' 'in_data_V_val2' <Predicate = true> <Delay = 0.00>
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 45 [1/1] (0.00ns)   --->   "%empty_34 = call { i16, i1 } @_ssdm_op_Read.axis.volatile.i16P.i1P(i16* %in_data_V, i1* %in_last)" [firmware/myproject_axi.cpp:4]   --->   Operation 45 'read' 'empty_34' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_8 : Operation 46 [1/1] (0.00ns)   --->   "%in_data_V_val4 = extractvalue { i16, i1 } %empty_34, 0" [firmware/myproject_axi.cpp:4]   --->   Operation 46 'extractvalue' 'in_data_V_val4' <Predicate = true> <Delay = 0.00>
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 47 [1/1] (0.00ns)   --->   "%empty_35 = call { i16, i1 } @_ssdm_op_Read.axis.volatile.i16P.i1P(i16* %in_data_V, i1* %in_last)" [firmware/myproject_axi.cpp:4]   --->   Operation 47 'read' 'empty_35' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_9 : Operation 48 [1/1] (0.00ns)   --->   "%in_data_V_val6 = extractvalue { i16, i1 } %empty_35, 0" [firmware/myproject_axi.cpp:4]   --->   Operation 48 'extractvalue' 'in_data_V_val6' <Predicate = true> <Delay = 0.00>
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 49 [1/1] (0.00ns)   --->   "%empty_36 = call { i16, i1 } @_ssdm_op_Read.axis.volatile.i16P.i1P(i16* %in_data_V, i1* %in_last)" [firmware/myproject_axi.cpp:4]   --->   Operation 49 'read' 'empty_36' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_10 : Operation 50 [1/1] (0.00ns)   --->   "%in_data_V_val8 = extractvalue { i16, i1 } %empty_36, 0" [firmware/myproject_axi.cpp:4]   --->   Operation 50 'extractvalue' 'in_data_V_val8' <Predicate = true> <Delay = 0.00>
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 51 [1/1] (0.00ns)   --->   "%empty_37 = call { i16, i1 } @_ssdm_op_Read.axis.volatile.i16P.i1P(i16* %in_data_V, i1* %in_last)" [firmware/myproject_axi.cpp:4]   --->   Operation 51 'read' 'empty_37' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_11 : Operation 52 [1/1] (0.00ns)   --->   "%in_data_V_val10 = extractvalue { i16, i1 } %empty_37, 0" [firmware/myproject_axi.cpp:4]   --->   Operation 52 'extractvalue' 'in_data_V_val10' <Predicate = true> <Delay = 0.00>
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 53 [1/1] (0.00ns)   --->   "%empty_38 = call { i16, i1 } @_ssdm_op_Read.axis.volatile.i16P.i1P(i16* %in_data_V, i1* %in_last)" [firmware/myproject_axi.cpp:4]   --->   Operation 53 'read' 'empty_38' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_12 : Operation 54 [1/1] (0.00ns)   --->   "%in_data_V_val11 = extractvalue { i16, i1 } %empty_38, 0" [firmware/myproject_axi.cpp:4]   --->   Operation 54 'extractvalue' 'in_data_V_val11' <Predicate = true> <Delay = 0.00>
+
+State 13 <SV = 12> <Delay = 0.00>
+ST_13 : Operation 55 [1/1] (0.00ns)   --->   "%empty_39 = call { i16, i1 } @_ssdm_op_Read.axis.volatile.i16P.i1P(i16* %in_data_V, i1* %in_last)" [firmware/myproject_axi.cpp:4]   --->   Operation 55 'read' 'empty_39' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_13 : Operation 56 [1/1] (0.00ns)   --->   "%in_data_V_val12 = extractvalue { i16, i1 } %empty_39, 0" [firmware/myproject_axi.cpp:4]   --->   Operation 56 'extractvalue' 'in_data_V_val12' <Predicate = true> <Delay = 0.00>
+
+State 14 <SV = 13> <Delay = 0.00>
+ST_14 : Operation 57 [1/1] (0.00ns)   --->   "%empty_40 = call { i16, i1 } @_ssdm_op_Read.axis.volatile.i16P.i1P(i16* %in_data_V, i1* %in_last)" [firmware/myproject_axi.cpp:4]   --->   Operation 57 'read' 'empty_40' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_14 : Operation 58 [1/1] (0.00ns)   --->   "%in_data_V_val13 = extractvalue { i16, i1 } %empty_40, 0" [firmware/myproject_axi.cpp:4]   --->   Operation 58 'extractvalue' 'in_data_V_val13' <Predicate = true> <Delay = 0.00>
+
+State 15 <SV = 14> <Delay = 0.00>
+ST_15 : Operation 59 [1/1] (0.00ns)   --->   "%empty_41 = call { i16, i1 } @_ssdm_op_Read.axis.volatile.i16P.i1P(i16* %in_data_V, i1* %in_last)" [firmware/myproject_axi.cpp:4]   --->   Operation 59 'read' 'empty_41' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_15 : Operation 60 [1/1] (0.00ns)   --->   "%in_data_V_val14 = extractvalue { i16, i1 } %empty_41, 0" [firmware/myproject_axi.cpp:4]   --->   Operation 60 'extractvalue' 'in_data_V_val14' <Predicate = true> <Delay = 0.00>
+
+State 16 <SV = 15> <Delay = 0.00>
+ST_16 : Operation 61 [1/1] (0.00ns)   --->   "%empty_42 = call { i16, i1 } @_ssdm_op_Read.axis.volatile.i16P.i1P(i16* %in_data_V, i1* %in_last)"   --->   Operation 61 'read' 'empty_42' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_16 : Operation 62 [1/1] (0.00ns)   --->   "%in_data_V_val15 = extractvalue { i16, i1 } %empty_42, 0"   --->   Operation 62 'extractvalue' 'in_data_V_val15' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 63 [1/1] (0.00ns)   --->   "%in_local_V_1 = call i256 @_ssdm_op_BitConcatenate.i256.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16.i16(i16 %in_data_V_val15, i16 %in_data_V_val14, i16 %in_data_V_val13, i16 %in_data_V_val12, i16 %in_data_V_val11, i16 %in_data_V_val10, i16 %in_data_V_val8, i16 %in_data_V_val6, i16 %in_data_V_val4, i16 %in_data_V_val2, i16 %in_data_V_val9, i16 %in_data_V_val7, i16 %in_data_V_val5, i16 %in_data_V_val3, i16 %in_data_V_val1, i16 %in_data_V_val)" [firmware/myproject_axi.cpp:21]   --->   Operation 63 'bitconcatenate' 'in_local_V_1' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 64 [1/1] (0.00ns)   --->   "store i256 %in_local_V_1, i256* %in_local_V, align 8" [firmware/myproject_axi.cpp:21]   --->   Operation 64 'store' <Predicate = true> <Delay = 0.00>
+
+State 17 <SV = 16> <Delay = 0.00>
+ST_17 : Operation 65 [2/2] (0.00ns)   --->   "call fastcc void @myproject(i256* %in_local_V, i16* %out_local_0, i16* %out_local_1, i16* %out_local_2, i16* %out_local_3, i16* %out_local_4)"   --->   Operation 65 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 18 <SV = 17> <Delay = 0.00>
+ST_18 : Operation 66 [1/2] (0.00ns)   --->   "call fastcc void @myproject(i256* %in_local_V, i16* %out_local_0, i16* %out_local_1, i16* %out_local_2, i16* %out_local_3, i16* %out_local_4)"   --->   Operation 66 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 19 <SV = 18> <Delay = 0.00>
+ST_19 : Operation 67 [1/1] (0.00ns)   --->   "%out_local_0_load = load i16* %out_local_0, align 2" [firmware/myproject_axi.cpp:29]   --->   Operation 67 'load' 'out_local_0_load' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 68 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P.i1P(i16* %out_data_V, i1* %out_last, i16 %out_local_0_load, i1 false)" [firmware/myproject_axi.cpp:5]   --->   Operation 68 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 20 <SV = 19> <Delay = 0.00>
+ST_20 : Operation 69 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P.i1P(i16* %out_data_V, i1* %out_last, i16 %out_local_0_load, i1 false)" [firmware/myproject_axi.cpp:5]   --->   Operation 69 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_20 : Operation 70 [1/1] (0.00ns)   --->   "%out_local_1_load = load i16* %out_local_1, align 2" [firmware/myproject_axi.cpp:29]   --->   Operation 70 'load' 'out_local_1_load' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 71 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P.i1P(i16* %out_data_V, i1* %out_last, i16 %out_local_1_load, i1 false)" [firmware/myproject_axi.cpp:5]   --->   Operation 71 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 21 <SV = 20> <Delay = 0.00>
+ST_21 : Operation 72 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P.i1P(i16* %out_data_V, i1* %out_last, i16 %out_local_1_load, i1 false)" [firmware/myproject_axi.cpp:5]   --->   Operation 72 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_21 : Operation 73 [1/1] (0.00ns)   --->   "%out_local_2_load = load i16* %out_local_2, align 2" [firmware/myproject_axi.cpp:29]   --->   Operation 73 'load' 'out_local_2_load' <Predicate = true> <Delay = 0.00>
+ST_21 : Operation 74 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P.i1P(i16* %out_data_V, i1* %out_last, i16 %out_local_2_load, i1 false)" [firmware/myproject_axi.cpp:5]   --->   Operation 74 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 22 <SV = 21> <Delay = 0.00>
+ST_22 : Operation 75 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P.i1P(i16* %out_data_V, i1* %out_last, i16 %out_local_2_load, i1 false)" [firmware/myproject_axi.cpp:5]   --->   Operation 75 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_22 : Operation 76 [1/1] (0.00ns)   --->   "%out_local_3_load = load i16* %out_local_3, align 2" [firmware/myproject_axi.cpp:29]   --->   Operation 76 'load' 'out_local_3_load' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 77 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P.i1P(i16* %out_data_V, i1* %out_last, i16 %out_local_3_load, i1 false)" [firmware/myproject_axi.cpp:5]   --->   Operation 77 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 23 <SV = 22> <Delay = 0.00>
+ST_23 : Operation 78 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P.i1P(i16* %out_data_V, i1* %out_last, i16 %out_local_3_load, i1 false)" [firmware/myproject_axi.cpp:5]   --->   Operation 78 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_23 : Operation 79 [1/1] (0.00ns)   --->   "%out_local_4_load = load i16* %out_local_4, align 2" [firmware/myproject_axi.cpp:29]   --->   Operation 79 'load' 'out_local_4_load' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 80 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P.i1P(i16* %out_data_V, i1* %out_last, i16 %out_local_4_load, i1 true)" [firmware/myproject_axi.cpp:5]   --->   Operation 80 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 24 <SV = 23> <Delay = 0.00>
+ST_24 : Operation 81 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %in_data_V), !map !198"   --->   Operation 81 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 82 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %in_last), !map !204"   --->   Operation 82 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 83 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %out_data_V), !map !208"   --->   Operation 83 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 84 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %out_last), !map !214"   --->   Operation 84 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 85 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([14 x i8]* @myproject_axi_str) nounwind"   --->   Operation 85 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 86 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %in_data_V, i1* %in_last, [5 x i8]* @p_str1, i32 1, i32 1, [5 x i8]* @p_str110, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)" [firmware/myproject_axi.cpp:8]   --->   Operation 86 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 87 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %out_data_V, i1* %out_last, [5 x i8]* @p_str1, i32 1, i32 1, [5 x i8]* @p_str110, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)" [firmware/myproject_axi.cpp:9]   --->   Operation 87 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 88 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [firmware/myproject_axi.cpp:10]   --->   Operation 88 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_24 : Operation 89 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i16P.i1P(i16* %out_data_V, i1* %out_last, i16 %out_local_4_load, i1 true)" [firmware/myproject_axi.cpp:5]   --->   Operation 89 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_24 : Operation 90 [1/1] (0.00ns)   --->   "ret void" [firmware/myproject_axi.cpp:35]   --->   Operation 90 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5ns, clock uncertainty: 0.625ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+ <State 9>: 0ns
+The critical path consists of the following:
+
+ <State 10>: 0ns
+The critical path consists of the following:
+
+ <State 11>: 0ns
+The critical path consists of the following:
+
+ <State 12>: 0ns
+The critical path consists of the following:
+
+ <State 13>: 0ns
+The critical path consists of the following:
+
+ <State 14>: 0ns
+The critical path consists of the following:
+
+ <State 15>: 0ns
+The critical path consists of the following:
+
+ <State 16>: 0ns
+The critical path consists of the following:
+
+ <State 17>: 0ns
+The critical path consists of the following:
+
+ <State 18>: 0ns
+The critical path consists of the following:
+
+ <State 19>: 0ns
+The critical path consists of the following:
+
+ <State 20>: 0ns
+The critical path consists of the following:
+
+ <State 21>: 0ns
+The critical path consists of the following:
+
+ <State 22>: 0ns
+The critical path consists of the following:
+
+ <State 23>: 0ns
+The critical path consists of the following:
+
+ <State 24>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
