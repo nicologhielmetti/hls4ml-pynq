@@ -1,0 +1,187 @@
+
+
+================================================================
+== Vivado HLS Report for 'softmax_latency'
+================================================================
+* Date:           Wed Mar 31 15:04:13 2021
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        myproject_prj
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 5.00 ns | 3.962 ns |   0.62 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline |
+    |   min   |   max   |    min    |    max    | min | max |   Type   |
+    +---------+---------+-----------+-----------+-----+-----+----------+
+    |        9|        9| 45.000 ns | 45.000 ns |    1|    1| function |
+    +---------+---------+-----------+-----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      5|       -|      -|    -|
+|Expression       |        -|      -|       0|     38|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        -|      -|       -|      -|    -|
+|Memory           |        4|      -|       0|      0|    -|
+|Multiplexer      |        -|      -|       -|      9|    -|
+|Register         |        0|      -|     617|    160|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        4|      5|     617|    207|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        1|      2|   ~0   |   ~0  |    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    +---------------------------+----------------------+-----------+
+    |          Instance         |        Module        | Expression|
+    +---------------------------+----------------------+-----------+
+    |myproject_axi_mulocq_U569  |myproject_axi_mulocq  |  i0 * i1  |
+    |myproject_axi_mulocq_U570  |myproject_axi_mulocq  |  i0 * i1  |
+    |myproject_axi_mulocq_U571  |myproject_axi_mulocq  |  i0 * i1  |
+    |myproject_axi_mulocq_U572  |myproject_axi_mulocq  |  i0 * i1  |
+    |myproject_axi_mulocq_U573  |myproject_axi_mulocq  |  i0 * i1  |
+    +---------------------------+----------------------+-----------+
+
+    * Memory: 
+    +-----------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |      Memory     |        Module        | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +-----------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |exp_table1_U     |softmax_latency_emb6  |        3|  0|   0|    0|  1024|   18|     1|        18432|
+    |invert_table2_U  |softmax_latency_incg  |        1|  0|   0|    0|  1024|   18|     1|        18432|
+    +-----------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total            |                      |        4|  0|   0|    0|  2048|   36|     2|        36864|
+    +-----------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |add_ln703_1_fu_272_p2             |     +    |      0|  0|   8|          18|          18|
+    |add_ln703_2_fu_276_p2             |     +    |      0|  0|   8|          18|          18|
+    |add_ln703_fu_281_p2               |     +    |      0|  0|   8|          18|          18|
+    |exp_sum_V_fu_285_p2               |     +    |      0|  0|   8|          18|          18|
+    |ap_block_pp0_stage0_01001         |    or    |      0|  0|   2|           1|           1|
+    |ap_block_state1_pp0_stage0_iter0  |    or    |      0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |    xor   |      0|  0|   2|           1|           2|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+    |Total                             |          |      0|  0|  38|          75|          76|
+    +----------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------+----+-----------+-----+-----------+
+    |   Name  | LUT| Input Size| Bits| Total Bits|
+    +---------+----+-----------+-----+-----------+
+    |ap_done  |   9|          2|    1|          2|
+    +---------+----+-----------+-----+-----------+
+    |Total    |   9|          2|    1|          2|
+    +---------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |add_ln703_2_reg_467      |  18|   0|   18|          0|
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter7  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter8  |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter9  |   1|   0|    1|          0|
+    |exp_res_0_V_reg_455      |  18|   0|   18|          0|
+    |exp_res_1_V_reg_461      |  18|   0|   18|          0|
+    |exp_res_2_V_reg_437      |  18|   0|   18|          0|
+    |exp_res_3_V_reg_443      |  18|   0|   18|          0|
+    |exp_res_4_V_reg_449      |  18|   0|   18|          0|
+    |inv_exp_sum_V_reg_482    |  18|   0|   18|          0|
+    |mul_ln1118_1_reg_526     |  30|   0|   30|          0|
+    |mul_ln1118_2_reg_531     |  30|   0|   30|          0|
+    |mul_ln1118_3_reg_536     |  30|   0|   30|          0|
+    |mul_ln1118_4_reg_541     |  30|   0|   30|          0|
+    |mul_ln1118_reg_521       |  30|   0|   30|          0|
+    |y_V_5_reg_472            |  10|   0|   10|          0|
+    |exp_res_0_V_reg_455      |  64|  32|   18|          0|
+    |exp_res_1_V_reg_461      |  64|  32|   18|          0|
+    |exp_res_2_V_reg_437      |  64|  32|   18|          0|
+    |exp_res_3_V_reg_443      |  64|  32|   18|          0|
+    |exp_res_4_V_reg_449      |  64|  32|   18|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    | 617| 160|  387|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------+-----+-----+------------+-----------------+--------------+
+|    RTL Ports   | Dir | Bits|  Protocol  |  Source Object  |    C Type    |
++----------------+-----+-----+------------+-----------------+--------------+
+|ap_clk          |  in |    1| ap_ctrl_hs | softmax_latency | return value |
+|ap_rst          |  in |    1| ap_ctrl_hs | softmax_latency | return value |
+|ap_start        |  in |    1| ap_ctrl_hs | softmax_latency | return value |
+|ap_done         | out |    1| ap_ctrl_hs | softmax_latency | return value |
+|ap_continue     |  in |    1| ap_ctrl_hs | softmax_latency | return value |
+|ap_idle         | out |    1| ap_ctrl_hs | softmax_latency | return value |
+|ap_ready        | out |    1| ap_ctrl_hs | softmax_latency | return value |
+|data_0_V        |  in |   16|   ap_none  |     data_0_V    |    pointer   |
+|data_1_V        |  in |   16|   ap_none  |     data_1_V    |    pointer   |
+|data_2_V        |  in |   16|   ap_none  |     data_2_V    |    pointer   |
+|data_3_V        |  in |   16|   ap_none  |     data_3_V    |    pointer   |
+|data_4_V        |  in |   16|   ap_none  |     data_4_V    |    pointer   |
+|res_0_V         | out |   16|   ap_vld   |     res_0_V     |    pointer   |
+|res_0_V_ap_vld  | out |    1|   ap_vld   |     res_0_V     |    pointer   |
+|res_1_V         | out |   16|   ap_vld   |     res_1_V     |    pointer   |
+|res_1_V_ap_vld  | out |    1|   ap_vld   |     res_1_V     |    pointer   |
+|res_2_V         | out |   16|   ap_vld   |     res_2_V     |    pointer   |
+|res_2_V_ap_vld  | out |    1|   ap_vld   |     res_2_V     |    pointer   |
+|res_3_V         | out |   16|   ap_vld   |     res_3_V     |    pointer   |
+|res_3_V_ap_vld  | out |    1|   ap_vld   |     res_3_V     |    pointer   |
+|res_4_V         | out |   16|   ap_vld   |     res_4_V     |    pointer   |
+|res_4_V_ap_vld  | out |    1|   ap_vld   |     res_4_V     |    pointer   |
++----------------+-----+-----+------------+-----------------+--------------+
+

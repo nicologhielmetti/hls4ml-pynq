@@ -1,0 +1,1610 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Mar 31 17:57:57 2021
+# Process ID: 18563
+# Current directory: /home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.runs/design_1_myproject_axi_0_7_synth_1
+# Command line: vivado -log design_1_myproject_axi_0_7.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_myproject_axi_0_7.tcl
+# Log file: /home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.runs/design_1_myproject_axi_0_7_synth_1/design_1_myproject_axi_0_7.vds
+# Journal file: /home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.runs/design_1_myproject_axi_0_7_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_myproject_axi_0_7.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/cpp_nn_v1/myproject_prj/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+Command: synth_design -top design_1_myproject_axi_0_7 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'design_1_myproject_axi_0_7' is locked:
+* IP definition 'hls4ml-nn (1.0)' for IP 'design_1_myproject_axi_0_7' (customized with software release 2019.2) has a different revision in the IP Catalog.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18709 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1995.469 ; gain = 201.684 ; free physical = 219 ; free virtual = 2733
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_myproject_axi_0_7' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ip/design_1_myproject_axi_0_7/synth/design_1_myproject_axi_0_7.v:57]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 7'b0000001 
+	Parameter ap_ST_fsm_state2 bound to: 7'b0000010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 7'b0000100 
+	Parameter ap_ST_fsm_state12 bound to: 7'b0001000 
+	Parameter ap_ST_fsm_state13 bound to: 7'b0010000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 7'b0100000 
+	Parameter ap_ST_fsm_state24 bound to: 7'b1000000 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_AXILITES_WSTRB_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi.v:93]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_AXILiteS_s_axi' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_AXILiteS_s_axi.v:6]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_VECTOR_ROWS_DATA_0 bound to: 5'b10000 
+	Parameter ADDR_VECTOR_ROWS_CTRL bound to: 5'b10100 
+	Parameter WRIDLE bound to: 2'b00 
+	Parameter WRDATA bound to: 2'b01 
+	Parameter WRRESP bound to: 2'b10 
+	Parameter WRRESET bound to: 2'b11 
+	Parameter RDIDLE bound to: 2'b00 
+	Parameter RDDATA bound to: 2'b01 
+	Parameter RDRESET bound to: 2'b10 
+	Parameter ADDR_BITS bound to: 5 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_AXILiteS_s_axi.v:160]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_AXILiteS_s_axi' (1#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_AXILiteS_s_axi.v:6]
+INFO: [Synth 8-6157] synthesizing module 'myproject' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_entry153' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_entry153.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_entry153.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_entry153' (2#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_entry153.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_3' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3.v:363]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_3_bkb' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3_bkb.v:39]
+	Parameter DataWidth bound to: 2 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_3_bkb_rom' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3_bkb.v:6]
+	Parameter DWIDTH bound to: 2 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3_bkb.v:18]
+INFO: [Synth 8-3876] $readmem data file './dense_resource_3_bkb_rom.dat' is read successfully [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3_bkb.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_3_bkb_rom' (3#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3_bkb.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_3_bkb' (4#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3_bkb.v:39]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_3_cud' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3_cud.v:39]
+	Parameter DataWidth bound to: 112 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_3_cud_rom' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3_cud.v:6]
+	Parameter DWIDTH bound to: 112 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './dense_resource_3_cud_rom.dat' is read successfully [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3_cud.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_3_cud_rom' (5#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3_cud.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_3_cud' (6#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3_cud.v:39]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_lshdEe' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_lshdEe.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 256 - type: integer 
+	Parameter din1_WIDTH bound to: 9 - type: integer 
+	Parameter dout_WIDTH bound to: 256 - type: integer 
+	Parameter OP bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 6 - type: integer 
+	Parameter K bound to: 2 - type: integer 
+	Parameter LATENCY bound to: 5 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_lshdEe' (7#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_lshdEe.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_muxeOg' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_muxeOg.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 16 - type: integer 
+	Parameter din3_WIDTH bound to: 16 - type: integer 
+	Parameter din4_WIDTH bound to: 2 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_muxeOg' (8#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_muxeOg.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_muxfYi' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_muxfYi.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 16 - type: integer 
+	Parameter din3_WIDTH bound to: 16 - type: integer 
+	Parameter din4_WIDTH bound to: 16 - type: integer 
+	Parameter din5_WIDTH bound to: 16 - type: integer 
+	Parameter din6_WIDTH bound to: 16 - type: integer 
+	Parameter din7_WIDTH bound to: 16 - type: integer 
+	Parameter din8_WIDTH bound to: 16 - type: integer 
+	Parameter din9_WIDTH bound to: 16 - type: integer 
+	Parameter din10_WIDTH bound to: 16 - type: integer 
+	Parameter din11_WIDTH bound to: 16 - type: integer 
+	Parameter din12_WIDTH bound to: 16 - type: integer 
+	Parameter din13_WIDTH bound to: 16 - type: integer 
+	Parameter din14_WIDTH bound to: 16 - type: integer 
+	Parameter din15_WIDTH bound to: 16 - type: integer 
+	Parameter din16_WIDTH bound to: 16 - type: integer 
+	Parameter din17_WIDTH bound to: 16 - type: integer 
+	Parameter din18_WIDTH bound to: 16 - type: integer 
+	Parameter din19_WIDTH bound to: 16 - type: integer 
+	Parameter din20_WIDTH bound to: 16 - type: integer 
+	Parameter din21_WIDTH bound to: 16 - type: integer 
+	Parameter din22_WIDTH bound to: 16 - type: integer 
+	Parameter din23_WIDTH bound to: 16 - type: integer 
+	Parameter din24_WIDTH bound to: 16 - type: integer 
+	Parameter din25_WIDTH bound to: 16 - type: integer 
+	Parameter din26_WIDTH bound to: 16 - type: integer 
+	Parameter din27_WIDTH bound to: 16 - type: integer 
+	Parameter din28_WIDTH bound to: 16 - type: integer 
+	Parameter din29_WIDTH bound to: 16 - type: integer 
+	Parameter din30_WIDTH bound to: 16 - type: integer 
+	Parameter din31_WIDTH bound to: 16 - type: integer 
+	Parameter din32_WIDTH bound to: 16 - type: integer 
+	Parameter din33_WIDTH bound to: 16 - type: integer 
+	Parameter din34_WIDTH bound to: 16 - type: integer 
+	Parameter din35_WIDTH bound to: 16 - type: integer 
+	Parameter din36_WIDTH bound to: 16 - type: integer 
+	Parameter din37_WIDTH bound to: 16 - type: integer 
+	Parameter din38_WIDTH bound to: 16 - type: integer 
+	Parameter din39_WIDTH bound to: 16 - type: integer 
+	Parameter din40_WIDTH bound to: 16 - type: integer 
+	Parameter din41_WIDTH bound to: 16 - type: integer 
+	Parameter din42_WIDTH bound to: 16 - type: integer 
+	Parameter din43_WIDTH bound to: 16 - type: integer 
+	Parameter din44_WIDTH bound to: 16 - type: integer 
+	Parameter din45_WIDTH bound to: 16 - type: integer 
+	Parameter din46_WIDTH bound to: 16 - type: integer 
+	Parameter din47_WIDTH bound to: 16 - type: integer 
+	Parameter din48_WIDTH bound to: 16 - type: integer 
+	Parameter din49_WIDTH bound to: 16 - type: integer 
+	Parameter din50_WIDTH bound to: 16 - type: integer 
+	Parameter din51_WIDTH bound to: 16 - type: integer 
+	Parameter din52_WIDTH bound to: 16 - type: integer 
+	Parameter din53_WIDTH bound to: 16 - type: integer 
+	Parameter din54_WIDTH bound to: 16 - type: integer 
+	Parameter din55_WIDTH bound to: 16 - type: integer 
+	Parameter din56_WIDTH bound to: 16 - type: integer 
+	Parameter din57_WIDTH bound to: 16 - type: integer 
+	Parameter din58_WIDTH bound to: 16 - type: integer 
+	Parameter din59_WIDTH bound to: 16 - type: integer 
+	Parameter din60_WIDTH bound to: 16 - type: integer 
+	Parameter din61_WIDTH bound to: 16 - type: integer 
+	Parameter din62_WIDTH bound to: 16 - type: integer 
+	Parameter din63_WIDTH bound to: 16 - type: integer 
+	Parameter din64_WIDTH bound to: 6 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_muxfYi' (9#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_muxfYi.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mulg8j' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulg8j.v:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 7 - type: integer 
+	Parameter dout_WIDTH bound to: 22 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mulg8j_DSP48_0' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulg8j.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mulg8j_DSP48_0' (10#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulg8j.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mulg8j' (11#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulg8j.v:29]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3.v:5870]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3.v:5872]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3.v:5874]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3.v:5876]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_3' (12#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'relu_1' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:547]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4779]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4781]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4783]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4785]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4787]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4789]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4791]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4793]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4795]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4797]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4799]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4801]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4803]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4805]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4807]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4809]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4811]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4813]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4815]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4817]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4819]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4821]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4823]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4825]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4827]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4829]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4831]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4833]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4835]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4837]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4839]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4841]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4843]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4845]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4847]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4849]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4851]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4853]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4855]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4857]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4859]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4861]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4863]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4865]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4867]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4869]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4871]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4873]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4875]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4877]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4879]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4881]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4883]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4885]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4887]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4889]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4891]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4893]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4895]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4897]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4899]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4901]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4903]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4905]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4907]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4909]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4911]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4913]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4915]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4917]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4919]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4921]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4923]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4925]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4927]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4929]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4931]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4933]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4935]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4937]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4939]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4941]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4943]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4945]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4947]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4949]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4951]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4953]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4955]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4957]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4959]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4961]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4963]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4965]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4967]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:4969]
+INFO: [Common 17-14] Message 'Synth 8-589' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'relu_1' (13#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_1' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:324]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_1_hbi' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1_hbi.v:39]
+	Parameter DataWidth bound to: 224 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_1_hbi_rom' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1_hbi.v:6]
+	Parameter DWIDTH bound to: 224 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './dense_resource_1_hbi_rom.dat' is read successfully [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1_hbi.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_1_hbi_rom' (14#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1_hbi.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_1_hbi' (15#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1_hbi.v:39]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_muxibs' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_muxibs.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 7 - type: integer 
+	Parameter din1_WIDTH bound to: 7 - type: integer 
+	Parameter din2_WIDTH bound to: 7 - type: integer 
+	Parameter din3_WIDTH bound to: 7 - type: integer 
+	Parameter din4_WIDTH bound to: 7 - type: integer 
+	Parameter din5_WIDTH bound to: 7 - type: integer 
+	Parameter din6_WIDTH bound to: 7 - type: integer 
+	Parameter din7_WIDTH bound to: 7 - type: integer 
+	Parameter din8_WIDTH bound to: 7 - type: integer 
+	Parameter din9_WIDTH bound to: 7 - type: integer 
+	Parameter din10_WIDTH bound to: 7 - type: integer 
+	Parameter din11_WIDTH bound to: 7 - type: integer 
+	Parameter din12_WIDTH bound to: 7 - type: integer 
+	Parameter din13_WIDTH bound to: 7 - type: integer 
+	Parameter din14_WIDTH bound to: 7 - type: integer 
+	Parameter din15_WIDTH bound to: 7 - type: integer 
+	Parameter din16_WIDTH bound to: 7 - type: integer 
+	Parameter din17_WIDTH bound to: 7 - type: integer 
+	Parameter din18_WIDTH bound to: 7 - type: integer 
+	Parameter din19_WIDTH bound to: 7 - type: integer 
+	Parameter din20_WIDTH bound to: 7 - type: integer 
+	Parameter din21_WIDTH bound to: 7 - type: integer 
+	Parameter din22_WIDTH bound to: 7 - type: integer 
+	Parameter din23_WIDTH bound to: 7 - type: integer 
+	Parameter din24_WIDTH bound to: 7 - type: integer 
+	Parameter din25_WIDTH bound to: 7 - type: integer 
+	Parameter din26_WIDTH bound to: 7 - type: integer 
+	Parameter din27_WIDTH bound to: 7 - type: integer 
+	Parameter din28_WIDTH bound to: 7 - type: integer 
+	Parameter din29_WIDTH bound to: 7 - type: integer 
+	Parameter din30_WIDTH bound to: 7 - type: integer 
+	Parameter din31_WIDTH bound to: 7 - type: integer 
+	Parameter din32_WIDTH bound to: 7 - type: integer 
+	Parameter din33_WIDTH bound to: 7 - type: integer 
+	Parameter din34_WIDTH bound to: 7 - type: integer 
+	Parameter din35_WIDTH bound to: 7 - type: integer 
+	Parameter din36_WIDTH bound to: 7 - type: integer 
+	Parameter din37_WIDTH bound to: 7 - type: integer 
+	Parameter din38_WIDTH bound to: 7 - type: integer 
+	Parameter din39_WIDTH bound to: 7 - type: integer 
+	Parameter din40_WIDTH bound to: 7 - type: integer 
+	Parameter din41_WIDTH bound to: 7 - type: integer 
+	Parameter din42_WIDTH bound to: 7 - type: integer 
+	Parameter din43_WIDTH bound to: 7 - type: integer 
+	Parameter din44_WIDTH bound to: 7 - type: integer 
+	Parameter din45_WIDTH bound to: 7 - type: integer 
+	Parameter din46_WIDTH bound to: 7 - type: integer 
+	Parameter din47_WIDTH bound to: 7 - type: integer 
+	Parameter din48_WIDTH bound to: 7 - type: integer 
+	Parameter din49_WIDTH bound to: 7 - type: integer 
+	Parameter din50_WIDTH bound to: 7 - type: integer 
+	Parameter din51_WIDTH bound to: 7 - type: integer 
+	Parameter din52_WIDTH bound to: 7 - type: integer 
+	Parameter din53_WIDTH bound to: 7 - type: integer 
+	Parameter din54_WIDTH bound to: 7 - type: integer 
+	Parameter din55_WIDTH bound to: 7 - type: integer 
+	Parameter din56_WIDTH bound to: 7 - type: integer 
+	Parameter din57_WIDTH bound to: 7 - type: integer 
+	Parameter din58_WIDTH bound to: 7 - type: integer 
+	Parameter din59_WIDTH bound to: 7 - type: integer 
+	Parameter din60_WIDTH bound to: 7 - type: integer 
+	Parameter din61_WIDTH bound to: 7 - type: integer 
+	Parameter din62_WIDTH bound to: 7 - type: integer 
+	Parameter din63_WIDTH bound to: 7 - type: integer 
+	Parameter din64_WIDTH bound to: 6 - type: integer 
+	Parameter dout_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_muxibs' (16#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_muxibs.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_1' (17#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'relu' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu.v:291]
+INFO: [Synth 8-6155] done synthesizing module 'relu' (18#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource.v:260]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_oujbC' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_oujbC.v:39]
+	Parameter DataWidth bound to: 1 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_oujbC_rom' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_oujbC.v:6]
+	Parameter DWIDTH bound to: 1 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_oujbC.v:18]
+INFO: [Synth 8-3876] $readmem data file './dense_resource_oujbC_rom.dat' is read successfully [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_oujbC.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_oujbC_rom' (19#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_oujbC.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_oujbC' (20#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_oujbC.v:39]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_w8_V' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_w8_V.v:39]
+	Parameter DataWidth bound to: 111 - type: integer 
+	Parameter AddressRange bound to: 64 - type: integer 
+	Parameter AddressWidth bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_w8_V_rom' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_w8_V.v:6]
+	Parameter DWIDTH bound to: 111 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+	Parameter MEM_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './dense_resource_w8_V_rom.dat' is read successfully [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_w8_V.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_w8_V_rom' (21#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_w8_V.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_w8_V' (22#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_w8_V.v:39]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_muxkbM' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_muxkbM.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 7 - type: integer 
+	Parameter din1_WIDTH bound to: 7 - type: integer 
+	Parameter din2_WIDTH bound to: 7 - type: integer 
+	Parameter din3_WIDTH bound to: 7 - type: integer 
+	Parameter din4_WIDTH bound to: 7 - type: integer 
+	Parameter din5_WIDTH bound to: 7 - type: integer 
+	Parameter din6_WIDTH bound to: 7 - type: integer 
+	Parameter din7_WIDTH bound to: 7 - type: integer 
+	Parameter din8_WIDTH bound to: 7 - type: integer 
+	Parameter din9_WIDTH bound to: 7 - type: integer 
+	Parameter din10_WIDTH bound to: 7 - type: integer 
+	Parameter din11_WIDTH bound to: 7 - type: integer 
+	Parameter din12_WIDTH bound to: 7 - type: integer 
+	Parameter din13_WIDTH bound to: 7 - type: integer 
+	Parameter din14_WIDTH bound to: 7 - type: integer 
+	Parameter din15_WIDTH bound to: 7 - type: integer 
+	Parameter din16_WIDTH bound to: 7 - type: integer 
+	Parameter din17_WIDTH bound to: 7 - type: integer 
+	Parameter din18_WIDTH bound to: 7 - type: integer 
+	Parameter din19_WIDTH bound to: 7 - type: integer 
+	Parameter din20_WIDTH bound to: 7 - type: integer 
+	Parameter din21_WIDTH bound to: 7 - type: integer 
+	Parameter din22_WIDTH bound to: 7 - type: integer 
+	Parameter din23_WIDTH bound to: 7 - type: integer 
+	Parameter din24_WIDTH bound to: 7 - type: integer 
+	Parameter din25_WIDTH bound to: 7 - type: integer 
+	Parameter din26_WIDTH bound to: 7 - type: integer 
+	Parameter din27_WIDTH bound to: 7 - type: integer 
+	Parameter din28_WIDTH bound to: 7 - type: integer 
+	Parameter din29_WIDTH bound to: 7 - type: integer 
+	Parameter din30_WIDTH bound to: 7 - type: integer 
+	Parameter din31_WIDTH bound to: 7 - type: integer 
+	Parameter din32_WIDTH bound to: 5 - type: integer 
+	Parameter dout_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_muxkbM' (23#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_muxkbM.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource' (24#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource.v:10]
+INFO: [Synth 8-6157] synthesizing module 'relu_2' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_2.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_2.v:291]
+INFO: [Synth 8-6155] done synthesizing module 'relu_2' (25#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/relu_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_2' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_2.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 2'b10 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_2.v:125]
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_2_lbW' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_2_lbW.v:39]
+	Parameter DataWidth bound to: 35 - type: integer 
+	Parameter AddressRange bound to: 32 - type: integer 
+	Parameter AddressWidth bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'dense_resource_2_lbW_rom' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_2_lbW.v:6]
+	Parameter DWIDTH bound to: 35 - type: integer 
+	Parameter AWIDTH bound to: 5 - type: integer 
+	Parameter MEM_SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './dense_resource_2_lbW_rom.dat' is read successfully [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_2_lbW.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_2_lbW_rom' (26#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_2_lbW.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_2_lbW' (27#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_2_lbW.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'dense_resource_2' (28#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'softmax_latency' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/softmax_latency.v:10]
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/softmax_latency.v:70]
+INFO: [Synth 8-6157] synthesizing module 'softmax_latency_emb6' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/softmax_latency_emb6.v:95]
+	Parameter DataWidth bound to: 18 - type: integer 
+	Parameter AddressRange bound to: 1024 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'softmax_latency_emb6_rom' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/softmax_latency_emb6.v:6]
+	Parameter DWIDTH bound to: 18 - type: integer 
+	Parameter AWIDTH bound to: 10 - type: integer 
+	Parameter MEM_SIZE bound to: 1024 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/softmax_latency_emb6.v:30]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/softmax_latency_emb6.v:31]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/softmax_latency_emb6.v:32]
+INFO: [Synth 8-3876] $readmem data file './softmax_latency_emb6_rom.dat' is read successfully [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/softmax_latency_emb6.v:35]
+INFO: [Synth 8-3876] $readmem data file './softmax_latency_emb6_rom.dat' is read successfully [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/softmax_latency_emb6.v:36]
+INFO: [Synth 8-3876] $readmem data file './softmax_latency_emb6_rom.dat' is read successfully [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/softmax_latency_emb6.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'softmax_latency_emb6_rom' (29#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/softmax_latency_emb6.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'softmax_latency_emb6' (30#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/softmax_latency_emb6.v:95]
+INFO: [Synth 8-6157] synthesizing module 'softmax_latency_incg' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/softmax_latency_incg.v:39]
+	Parameter DataWidth bound to: 18 - type: integer 
+	Parameter AddressRange bound to: 1024 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'softmax_latency_incg_rom' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/softmax_latency_incg.v:6]
+	Parameter DWIDTH bound to: 18 - type: integer 
+	Parameter AWIDTH bound to: 10 - type: integer 
+	Parameter MEM_SIZE bound to: 1024 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './softmax_latency_incg_rom.dat' is read successfully [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/softmax_latency_incg.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'softmax_latency_incg_rom' (31#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/softmax_latency_incg.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'softmax_latency_incg' (32#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/softmax_latency_incg.v:39]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mulocq' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulocq.v:29]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 18 - type: integer 
+	Parameter din1_WIDTH bound to: 18 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_mulocq_DSP48_1' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulocq.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mulocq_DSP48_1' (33#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulocq.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_mulocq' (34#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulocq.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'softmax_latency' (35#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/softmax_latency.v:10]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w256_d2_A' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/fifo_w256_d2_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 256 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w256_d2_A_shiftReg' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/fifo_w256_d2_A.v:8]
+	Parameter DATA_WIDTH bound to: 256 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w256_d2_A_shiftReg' (36#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/fifo_w256_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w256_d2_A' (37#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/fifo_w256_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d2_A' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/fifo_w16_d2_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w16_d2_A_shiftReg' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/fifo_w16_d2_A.v:8]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d2_A_shiftReg' (38#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/fifo_w16_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w16_d2_A' (39#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/fifo_w16_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w6_d2_A' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/fifo_w6_d2_A.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'fifo_w6_d2_A_shiftReg' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/fifo_w6_d2_A.v:8]
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w6_d2_A_shiftReg' (40#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/fifo_w6_d2_A.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w6_d2_A' (41#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/fifo_w6_d2_A.v:42]
+INFO: [Synth 8-6157] synthesizing module 'start_for_dense_rpcA' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/start_for_dense_rpcA.v:42]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'start_for_dense_rpcA_shiftReg' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/start_for_dense_rpcA.v:8]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'start_for_dense_rpcA_shiftReg' (42#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/start_for_dense_rpcA.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'start_for_dense_rpcA' (43#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/start_for_dense_rpcA.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'myproject' (44#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject.v:10]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_fpeqcK' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_fpeqcK.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 3 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'myproject_axi_ap_fpext_1_no_dsp_32' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/ip/myproject_axi_ap_fpext_1_no_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 1 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_9' declared at '/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/f7b4/hdl/floating_point_v7_1_rfs.vhd:94207' bound to instance 'U0' of component 'floating_point_v7_1_9' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/ip/myproject_axi_ap_fpext_1_no_dsp_32.vhd:205]
+INFO: [Synth 8-256] done synthesizing module 'myproject_axi_ap_fpext_1_no_dsp_32' (55#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/ip/myproject_axi_ap_fpext_1_no_dsp_32.vhd:70]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_fpeqcK' (56#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_fpeqcK.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_ashrcU' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_ashrcU.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 54 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 54 - type: integer 
+	Parameter OP bound to: 2 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter K bound to: 16 - type: integer 
+	Parameter LATENCY bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_ashrcU' (57#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_ashrcU.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_muxsc4' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_muxsc4.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 16 - type: integer 
+	Parameter din3_WIDTH bound to: 16 - type: integer 
+	Parameter din4_WIDTH bound to: 16 - type: integer 
+	Parameter din5_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_muxsc4' (58#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_muxsc4.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_lshtde' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_lshtde.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+	Parameter OP bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter K bound to: 16 - type: integer 
+	Parameter LATENCY bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_lshtde' (59#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_lshtde.v:8]
+INFO: [Synth 8-6157] synthesizing module 'myproject_axi_shludo' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_shludo.v:8]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+	Parameter OP bound to: 0 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter K bound to: 16 - type: integer 
+	Parameter LATENCY bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi_shludo' (60#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_shludo.v:8]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 32 - type: integer 
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf' (61#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 33 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf' (62#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both' (63#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6157] synthesizing module 'regslice_both__parameterized0' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/regslice_core.v:8]
+	Parameter DataWidth bound to: 1 - type: integer 
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ibuf__parameterized0' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/regslice_core.v:372]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ibuf__parameterized0' (63#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/regslice_core.v:372]
+INFO: [Synth 8-6157] synthesizing module 'obuf__parameterized0' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/regslice_core.v:402]
+	Parameter W bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'obuf__parameterized0' (63#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/regslice_core.v:402]
+INFO: [Synth 8-6155] done synthesizing module 'regslice_both__parameterized0' (63#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/regslice_core.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'myproject_axi' (64#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_myproject_axi_0_7' (65#1) [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ip/design_1_myproject_axi_0_7/synth/design_1_myproject_axi_0_7.v:57]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[63]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[62]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[61]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[60]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[59]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[58]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[57]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[56]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[55]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[54]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[53]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[52]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[51]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[50]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[49]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[48]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[47]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[46]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[45]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[44]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[43]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[42]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[41]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[40]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[39]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[38]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[37]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[36]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[35]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[34]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[33]
+WARNING: [Synth 8-3331] design myproject_axi_shludo has unconnected port din1[32]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[53]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[52]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[51]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[50]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[49]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[48]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[47]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[46]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[45]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[44]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[43]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[42]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[41]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[40]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[39]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[38]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[37]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[36]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[35]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[34]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[33]
+WARNING: [Synth 8-3331] design myproject_axi_ashrcU has unconnected port din1[32]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized17 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized17 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized17 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized17 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized17 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized11 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized9 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized9 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized9 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized9 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized9 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized1 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized1 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized1 has unconnected port SCLR
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 2212.094 ; gain = 418.309 ; free physical = 326 ; free virtual = 2490
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 2223.969 ; gain = 430.184 ; free physical = 307 ; free virtual = 2473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 2223.969 ; gain = 430.184 ; free physical = 307 ; free virtual = 2473
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.44 ; elapsed = 00:00:00.43 . Memory (MB): peak = 2223.969 ; gain = 0.000 ; free physical = 195 ; free virtual = 2363
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ip/design_1_myproject_axi_0_7/constraints/myproject_axi_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ip/design_1_myproject_axi_0_7/constraints/myproject_axi_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.runs/design_1_myproject_axi_0_7_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.runs/design_1_myproject_axi_0_7_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2385.812 ; gain = 0.000 ; free physical = 168 ; free virtual = 2255
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.85 ; elapsed = 00:00:00.30 . Memory (MB): peak = 2394.719 ; gain = 8.906 ; free physical = 346 ; free virtual = 2442
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2394.719 ; gain = 600.934 ; free physical = 548 ; free virtual = 2653
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2394.719 ; gain = 600.934 ; free physical = 548 ; free virtual = 2653
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.runs/design_1_myproject_axi_0_7_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2394.719 ; gain = 600.934 ; free physical = 550 ; free virtual = 2655
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'myproject_axi_AXILiteS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'myproject_axi_AXILiteS_s_axi'
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+INFO: [Synth 8-5546] ROM "ram" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'sub_ln160_3_reg_5840_pp0_iter3_reg_reg[0:0]' into 'sub_ln160_3_reg_5840_reg[0:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3.v:5956]
+INFO: [Synth 8-4471] merging register 'sub_ln160_3_reg_5840_pp0_iter4_reg_reg[0:0]' into 'sub_ln160_3_reg_5840_reg[0:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3.v:5957]
+INFO: [Synth 8-4471] merging register 'sub_ln160_3_reg_5840_pp0_iter5_reg_reg[0:0]' into 'sub_ln160_3_reg_5840_reg[0:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3.v:5958]
+INFO: [Synth 8-4471] merging register 'sub_ln160_3_reg_5840_pp0_iter6_reg_reg[0:0]' into 'sub_ln160_3_reg_5840_reg[0:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3.v:5959]
+INFO: [Synth 8-4471] merging register 'sub_ln160_3_reg_5840_pp0_iter7_reg_reg[0:0]' into 'sub_ln160_3_reg_5840_reg[0:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3.v:5960]
+INFO: [Synth 8-4471] merging register 'sub_ln160_3_reg_5840_pp0_iter8_reg_reg[0:0]' into 'sub_ln160_3_reg_5840_reg[0:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3.v:5952]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3.v:5874]
+WARNING: [Synth 8-3936] Found unconnected internal register 'lshr_ln160_reg_5860_reg' and it is trimmed from '256' to '16' bits. [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_3.v:3952]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "ram" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "ram". This will be implemented in logic
+INFO: [Synth 8-5546] ROM "ram" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "ram" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-7031] Trying to map ROM "ram0" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-7031] Trying to map ROM "ram0" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-7031] Trying to map ROM "ram1" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-7031] Trying to map ROM "ram1" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-7031] Trying to map ROM "ram2" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-4471] merging register 'select_ln22_reg_1146_reg[31:0]' into 'row_count_reg[31:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi.v:1175]
+INFO: [Synth 8-4471] merging register 'or_ln_reg_1405_pp1_iter5_reg_reg[31:1]' into 'or_ln_reg_1405_reg[31:1]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi.v:1810]
+WARNING: [Synth 8-3936] Found unconnected internal register 'trunc_ln944_reg_1369_pp1_iter3_reg_reg' and it is trimmed from '16' to '4' bits. [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi.v:1007]
+WARNING: [Synth 8-3936] Found unconnected internal register 'trunc_ln944_reg_1369_reg' and it is trimmed from '16' to '4' bits. [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi.v:1196]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_5_reg_1440_pp1_iter7_reg_reg' and it is trimmed from '63' to '23' bits. [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi.v:991]
+WARNING: [Synth 8-3936] Found unconnected internal register 'm_5_reg_1440_reg' and it is trimmed from '63' to '23' bits. [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi.v:1137]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ashr_ln586_reg_1258_reg' and it is trimmed from '54' to '16' bits. [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi.v:1050]
+INFO: [Synth 8-4471] merging register 'trunc_ln943_reg_1357_reg[5:0]' into 'l_reg_1352_reg[5:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi.v:1104]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'myproject_axi_AXILiteS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'myproject_axi_AXILiteS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:43 . Memory (MB): peak = 2394.719 ; gain = 600.934 ; free physical = 343 ; free virtual = 2472
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/myproject_axi_fpeqcK_U856/myproject_axi_ap_fpext_1_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'inst/myproject_axi_fpeqcK_U856/myproject_axi_ap_fpext_1_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'inst/myproject_axi_fpeqcK_U856/myproject_axi_ap_fpext_1_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'inst/myproject_axi_fpeqcK_U856/myproject_axi_ap_fpext_1_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/myproject_axi_fpeqcK_U856/myproject_axi_ap_fpext_1_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized2) to 'inst/myproject_axi_fpeqcK_U856/myproject_axi_ap_fpext_1_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |dense_resource_3__GB0 |           1|     29402|
+|2     |dense_resource_3__GB1 |           1|      7169|
+|3     |myproject__GCB0       |           1|     25691|
+|4     |myproject__GCB1       |           1|     18427|
+|5     |myproject__GCB2       |           1|     27078|
+|6     |myproject_axi__GC0    |           1|     13986|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[0]' (FDE) to 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[105]'
+INFO: [Synth 8-3886] merging instance 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[7]' (FDE) to 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[105]'
+INFO: [Synth 8-3886] merging instance 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[14]' (FDE) to 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[105]'
+INFO: [Synth 8-3886] merging instance 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[21]' (FDE) to 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[105]'
+INFO: [Synth 8-3886] merging instance 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[28]' (FDE) to 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[105]'
+INFO: [Synth 8-3886] merging instance 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[35]' (FDE) to 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[105]'
+INFO: [Synth 8-3886] merging instance 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[42]' (FDE) to 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[105]'
+INFO: [Synth 8-3886] merging instance 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[49]' (FDE) to 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[105]'
+INFO: [Synth 8-3886] merging instance 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[56]' (FDE) to 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[105]'
+INFO: [Synth 8-3886] merging instance 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[63]' (FDE) to 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[105]'
+INFO: [Synth 8-3886] merging instance 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[70]' (FDE) to 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[105]'
+INFO: [Synth 8-3886] merging instance 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[77]' (FDE) to 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[105]'
+INFO: [Synth 8-3886] merging instance 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[84]' (FDE) to 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[105]'
+INFO: [Synth 8-3886] merging instance 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[91]' (FDE) to 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[105]'
+INFO: [Synth 8-3886] merging instance 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[98]' (FDE) to 'inst/dense_resource_3_U0i_2_2/w2_V_U/dense_resource_3_cud_rom_U/q0_reg[105]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/dense_resource_3_U0i_2_2/\w2_V_U/dense_resource_3_cud_rom_U/q0_reg[105] )
+INFO: [Synth 8-4471] merging register 'myproject_axi_mulg8j_U21/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' into 'myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulg8j.v:19]
+INFO: [Synth 8-4471] merging register 'myproject_axi_mulg8j_U22/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' into 'myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulg8j.v:19]
+INFO: [Synth 8-4471] merging register 'myproject_axi_mulg8j_U23/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' into 'myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulg8j.v:19]
+INFO: [Synth 8-4471] merging register 'myproject_axi_mulg8j_U24/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' into 'myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulg8j.v:19]
+INFO: [Synth 8-4471] merging register 'myproject_axi_mulg8j_U25/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' into 'myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulg8j.v:19]
+INFO: [Synth 8-4471] merging register 'myproject_axi_mulg8j_U26/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' into 'myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulg8j.v:19]
+INFO: [Synth 8-4471] merging register 'myproject_axi_mulg8j_U27/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' into 'myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulg8j.v:19]
+INFO: [Synth 8-4471] merging register 'myproject_axi_mulg8j_U28/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' into 'myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulg8j.v:19]
+INFO: [Synth 8-4471] merging register 'myproject_axi_mulg8j_U29/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' into 'myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulg8j.v:19]
+INFO: [Synth 8-4471] merging register 'myproject_axi_mulg8j_U30/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' into 'myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulg8j.v:19]
+INFO: [Synth 8-4471] merging register 'myproject_axi_mulg8j_U31/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' into 'myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulg8j.v:19]
+INFO: [Synth 8-4471] merging register 'myproject_axi_mulg8j_U32/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' into 'myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulg8j.v:19]
+INFO: [Synth 8-4471] merging register 'myproject_axi_mulg8j_U33/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' into 'myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulg8j.v:19]
+INFO: [Synth 8-4471] merging register 'myproject_axi_mulg8j_U34/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' into 'myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulg8j.v:19]
+INFO: [Synth 8-4471] merging register 'myproject_axi_mulg8j_U35/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' into 'myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg[15:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulg8j.v:19]
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+DSP Report: Generating DSP mul_ln1118_reg_6062_reg, operation Mode is: (A''*B'')'.
+DSP Report: register trunc_ln160_2_reg_5882_reg is absorbed into DSP mul_ln1118_reg_6062_reg.
+DSP Report: register myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/b_reg_reg is absorbed into DSP mul_ln1118_reg_6062_reg.
+DSP Report: register trunc_ln160_1_reg_5877_reg is absorbed into DSP mul_ln1118_reg_6062_reg.
+DSP Report: register myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg is absorbed into DSP mul_ln1118_reg_6062_reg.
+DSP Report: register mul_ln1118_reg_6062_reg is absorbed into DSP mul_ln1118_reg_6062_reg.
+DSP Report: register myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/p_reg_reg is absorbed into DSP mul_ln1118_reg_6062_reg.
+DSP Report: operator myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/p_reg0 is absorbed into DSP mul_ln1118_reg_6062_reg.
+DSP Report: Generating DSP mul_ln1118_5_reg_6067_reg, operation Mode is: (A''*B'')'.
+DSP Report: register tmp_94_i_reg_5887_reg is absorbed into DSP mul_ln1118_5_reg_6067_reg.
+DSP Report: register myproject_axi_mulg8j_U21/myproject_axi_mulg8j_DSP48_0_U/b_reg_reg is absorbed into DSP mul_ln1118_5_reg_6067_reg.
+DSP Report: register trunc_ln160_1_reg_5877_reg is absorbed into DSP mul_ln1118_5_reg_6067_reg.
+DSP Report: register myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg is absorbed into DSP mul_ln1118_5_reg_6067_reg.
+DSP Report: register mul_ln1118_5_reg_6067_reg is absorbed into DSP mul_ln1118_5_reg_6067_reg.
+DSP Report: register myproject_axi_mulg8j_U21/myproject_axi_mulg8j_DSP48_0_U/p_reg_reg is absorbed into DSP mul_ln1118_5_reg_6067_reg.
+DSP Report: operator myproject_axi_mulg8j_U21/myproject_axi_mulg8j_DSP48_0_U/p_reg0 is absorbed into DSP mul_ln1118_5_reg_6067_reg.
+DSP Report: Generating DSP mul_ln1118_6_reg_6072_reg, operation Mode is: (A''*B'')'.
+DSP Report: register tmp_95_i_reg_5892_reg is absorbed into DSP mul_ln1118_6_reg_6072_reg.
+DSP Report: register myproject_axi_mulg8j_U22/myproject_axi_mulg8j_DSP48_0_U/b_reg_reg is absorbed into DSP mul_ln1118_6_reg_6072_reg.
+DSP Report: register trunc_ln160_1_reg_5877_reg is absorbed into DSP mul_ln1118_6_reg_6072_reg.
+DSP Report: register myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg is absorbed into DSP mul_ln1118_6_reg_6072_reg.
+DSP Report: register mul_ln1118_6_reg_6072_reg is absorbed into DSP mul_ln1118_6_reg_6072_reg.
+DSP Report: register myproject_axi_mulg8j_U22/myproject_axi_mulg8j_DSP48_0_U/p_reg_reg is absorbed into DSP mul_ln1118_6_reg_6072_reg.
+DSP Report: operator myproject_axi_mulg8j_U22/myproject_axi_mulg8j_DSP48_0_U/p_reg0 is absorbed into DSP mul_ln1118_6_reg_6072_reg.
+DSP Report: Generating DSP mul_ln1118_7_reg_6077_reg, operation Mode is: (A''*B'')'.
+DSP Report: register tmp_96_i_reg_5897_reg is absorbed into DSP mul_ln1118_7_reg_6077_reg.
+DSP Report: register myproject_axi_mulg8j_U23/myproject_axi_mulg8j_DSP48_0_U/b_reg_reg is absorbed into DSP mul_ln1118_7_reg_6077_reg.
+DSP Report: register trunc_ln160_1_reg_5877_reg is absorbed into DSP mul_ln1118_7_reg_6077_reg.
+DSP Report: register myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg is absorbed into DSP mul_ln1118_7_reg_6077_reg.
+DSP Report: register mul_ln1118_7_reg_6077_reg is absorbed into DSP mul_ln1118_7_reg_6077_reg.
+DSP Report: register myproject_axi_mulg8j_U23/myproject_axi_mulg8j_DSP48_0_U/p_reg_reg is absorbed into DSP mul_ln1118_7_reg_6077_reg.
+DSP Report: operator myproject_axi_mulg8j_U23/myproject_axi_mulg8j_DSP48_0_U/p_reg0 is absorbed into DSP mul_ln1118_7_reg_6077_reg.
+DSP Report: Generating DSP mul_ln1118_8_reg_6082_reg, operation Mode is: (A''*B'')'.
+DSP Report: register tmp_97_i_reg_5902_reg is absorbed into DSP mul_ln1118_8_reg_6082_reg.
+DSP Report: register myproject_axi_mulg8j_U24/myproject_axi_mulg8j_DSP48_0_U/b_reg_reg is absorbed into DSP mul_ln1118_8_reg_6082_reg.
+DSP Report: register trunc_ln160_1_reg_5877_reg is absorbed into DSP mul_ln1118_8_reg_6082_reg.
+DSP Report: register myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg is absorbed into DSP mul_ln1118_8_reg_6082_reg.
+DSP Report: register mul_ln1118_8_reg_6082_reg is absorbed into DSP mul_ln1118_8_reg_6082_reg.
+DSP Report: register myproject_axi_mulg8j_U24/myproject_axi_mulg8j_DSP48_0_U/p_reg_reg is absorbed into DSP mul_ln1118_8_reg_6082_reg.
+DSP Report: operator myproject_axi_mulg8j_U24/myproject_axi_mulg8j_DSP48_0_U/p_reg0 is absorbed into DSP mul_ln1118_8_reg_6082_reg.
+DSP Report: Generating DSP mul_ln1118_9_reg_6087_reg, operation Mode is: (A''*B'')'.
+DSP Report: register tmp_98_i_reg_5907_reg is absorbed into DSP mul_ln1118_9_reg_6087_reg.
+DSP Report: register myproject_axi_mulg8j_U25/myproject_axi_mulg8j_DSP48_0_U/b_reg_reg is absorbed into DSP mul_ln1118_9_reg_6087_reg.
+DSP Report: register trunc_ln160_1_reg_5877_reg is absorbed into DSP mul_ln1118_9_reg_6087_reg.
+DSP Report: register myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg is absorbed into DSP mul_ln1118_9_reg_6087_reg.
+DSP Report: register mul_ln1118_9_reg_6087_reg is absorbed into DSP mul_ln1118_9_reg_6087_reg.
+DSP Report: register myproject_axi_mulg8j_U25/myproject_axi_mulg8j_DSP48_0_U/p_reg_reg is absorbed into DSP mul_ln1118_9_reg_6087_reg.
+DSP Report: operator myproject_axi_mulg8j_U25/myproject_axi_mulg8j_DSP48_0_U/p_reg0 is absorbed into DSP mul_ln1118_9_reg_6087_reg.
+DSP Report: Generating DSP mul_ln1118_10_reg_6092_reg, operation Mode is: (A''*B'')'.
+DSP Report: register tmp_99_i_reg_5912_reg is absorbed into DSP mul_ln1118_10_reg_6092_reg.
+DSP Report: register myproject_axi_mulg8j_U26/myproject_axi_mulg8j_DSP48_0_U/b_reg_reg is absorbed into DSP mul_ln1118_10_reg_6092_reg.
+DSP Report: register trunc_ln160_1_reg_5877_reg is absorbed into DSP mul_ln1118_10_reg_6092_reg.
+DSP Report: register myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg is absorbed into DSP mul_ln1118_10_reg_6092_reg.
+DSP Report: register mul_ln1118_10_reg_6092_reg is absorbed into DSP mul_ln1118_10_reg_6092_reg.
+DSP Report: register myproject_axi_mulg8j_U26/myproject_axi_mulg8j_DSP48_0_U/p_reg_reg is absorbed into DSP mul_ln1118_10_reg_6092_reg.
+DSP Report: operator myproject_axi_mulg8j_U26/myproject_axi_mulg8j_DSP48_0_U/p_reg0 is absorbed into DSP mul_ln1118_10_reg_6092_reg.
+DSP Report: Generating DSP mul_ln1118_11_reg_6097_reg, operation Mode is: (A''*B'')'.
+DSP Report: register tmp_100_i_reg_5917_reg is absorbed into DSP mul_ln1118_11_reg_6097_reg.
+DSP Report: register myproject_axi_mulg8j_U27/myproject_axi_mulg8j_DSP48_0_U/b_reg_reg is absorbed into DSP mul_ln1118_11_reg_6097_reg.
+DSP Report: register trunc_ln160_1_reg_5877_reg is absorbed into DSP mul_ln1118_11_reg_6097_reg.
+DSP Report: register myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg is absorbed into DSP mul_ln1118_11_reg_6097_reg.
+DSP Report: register mul_ln1118_11_reg_6097_reg is absorbed into DSP mul_ln1118_11_reg_6097_reg.
+DSP Report: register myproject_axi_mulg8j_U27/myproject_axi_mulg8j_DSP48_0_U/p_reg_reg is absorbed into DSP mul_ln1118_11_reg_6097_reg.
+DSP Report: operator myproject_axi_mulg8j_U27/myproject_axi_mulg8j_DSP48_0_U/p_reg0 is absorbed into DSP mul_ln1118_11_reg_6097_reg.
+DSP Report: Generating DSP mul_ln1118_12_reg_6102_reg, operation Mode is: (A''*B'')'.
+DSP Report: register tmp_101_i_reg_5922_reg is absorbed into DSP mul_ln1118_12_reg_6102_reg.
+DSP Report: register myproject_axi_mulg8j_U28/myproject_axi_mulg8j_DSP48_0_U/b_reg_reg is absorbed into DSP mul_ln1118_12_reg_6102_reg.
+DSP Report: register trunc_ln160_1_reg_5877_reg is absorbed into DSP mul_ln1118_12_reg_6102_reg.
+DSP Report: register myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg is absorbed into DSP mul_ln1118_12_reg_6102_reg.
+DSP Report: register mul_ln1118_12_reg_6102_reg is absorbed into DSP mul_ln1118_12_reg_6102_reg.
+DSP Report: register myproject_axi_mulg8j_U28/myproject_axi_mulg8j_DSP48_0_U/p_reg_reg is absorbed into DSP mul_ln1118_12_reg_6102_reg.
+DSP Report: operator myproject_axi_mulg8j_U28/myproject_axi_mulg8j_DSP48_0_U/p_reg0 is absorbed into DSP mul_ln1118_12_reg_6102_reg.
+DSP Report: Generating DSP mul_ln1118_13_reg_6107_reg, operation Mode is: (A''*B'')'.
+DSP Report: register tmp_102_i_reg_5927_reg is absorbed into DSP mul_ln1118_13_reg_6107_reg.
+DSP Report: register myproject_axi_mulg8j_U29/myproject_axi_mulg8j_DSP48_0_U/b_reg_reg is absorbed into DSP mul_ln1118_13_reg_6107_reg.
+DSP Report: register trunc_ln160_1_reg_5877_reg is absorbed into DSP mul_ln1118_13_reg_6107_reg.
+DSP Report: register myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg is absorbed into DSP mul_ln1118_13_reg_6107_reg.
+DSP Report: register mul_ln1118_13_reg_6107_reg is absorbed into DSP mul_ln1118_13_reg_6107_reg.
+DSP Report: register myproject_axi_mulg8j_U29/myproject_axi_mulg8j_DSP48_0_U/p_reg_reg is absorbed into DSP mul_ln1118_13_reg_6107_reg.
+DSP Report: operator myproject_axi_mulg8j_U29/myproject_axi_mulg8j_DSP48_0_U/p_reg0 is absorbed into DSP mul_ln1118_13_reg_6107_reg.
+DSP Report: Generating DSP mul_ln1118_14_reg_6112_reg, operation Mode is: (A''*B'')'.
+DSP Report: register tmp_103_i_reg_5932_reg is absorbed into DSP mul_ln1118_14_reg_6112_reg.
+DSP Report: register myproject_axi_mulg8j_U30/myproject_axi_mulg8j_DSP48_0_U/b_reg_reg is absorbed into DSP mul_ln1118_14_reg_6112_reg.
+DSP Report: register trunc_ln160_1_reg_5877_reg is absorbed into DSP mul_ln1118_14_reg_6112_reg.
+DSP Report: register myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg is absorbed into DSP mul_ln1118_14_reg_6112_reg.
+DSP Report: register mul_ln1118_14_reg_6112_reg is absorbed into DSP mul_ln1118_14_reg_6112_reg.
+DSP Report: register myproject_axi_mulg8j_U30/myproject_axi_mulg8j_DSP48_0_U/p_reg_reg is absorbed into DSP mul_ln1118_14_reg_6112_reg.
+DSP Report: operator myproject_axi_mulg8j_U30/myproject_axi_mulg8j_DSP48_0_U/p_reg0 is absorbed into DSP mul_ln1118_14_reg_6112_reg.
+DSP Report: Generating DSP mul_ln1118_15_reg_6117_reg, operation Mode is: (A''*B'')'.
+DSP Report: register tmp_104_i_reg_5937_reg is absorbed into DSP mul_ln1118_15_reg_6117_reg.
+DSP Report: register myproject_axi_mulg8j_U31/myproject_axi_mulg8j_DSP48_0_U/b_reg_reg is absorbed into DSP mul_ln1118_15_reg_6117_reg.
+DSP Report: register trunc_ln160_1_reg_5877_reg is absorbed into DSP mul_ln1118_15_reg_6117_reg.
+DSP Report: register myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg is absorbed into DSP mul_ln1118_15_reg_6117_reg.
+DSP Report: register mul_ln1118_15_reg_6117_reg is absorbed into DSP mul_ln1118_15_reg_6117_reg.
+DSP Report: register myproject_axi_mulg8j_U31/myproject_axi_mulg8j_DSP48_0_U/p_reg_reg is absorbed into DSP mul_ln1118_15_reg_6117_reg.
+DSP Report: operator myproject_axi_mulg8j_U31/myproject_axi_mulg8j_DSP48_0_U/p_reg0 is absorbed into DSP mul_ln1118_15_reg_6117_reg.
+DSP Report: Generating DSP mul_ln1118_16_reg_6122_reg, operation Mode is: (A''*B'')'.
+DSP Report: register tmp_105_i_reg_5942_reg is absorbed into DSP mul_ln1118_16_reg_6122_reg.
+DSP Report: register myproject_axi_mulg8j_U32/myproject_axi_mulg8j_DSP48_0_U/b_reg_reg is absorbed into DSP mul_ln1118_16_reg_6122_reg.
+DSP Report: register trunc_ln160_1_reg_5877_reg is absorbed into DSP mul_ln1118_16_reg_6122_reg.
+DSP Report: register myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg is absorbed into DSP mul_ln1118_16_reg_6122_reg.
+DSP Report: register mul_ln1118_16_reg_6122_reg is absorbed into DSP mul_ln1118_16_reg_6122_reg.
+DSP Report: register myproject_axi_mulg8j_U32/myproject_axi_mulg8j_DSP48_0_U/p_reg_reg is absorbed into DSP mul_ln1118_16_reg_6122_reg.
+DSP Report: operator myproject_axi_mulg8j_U32/myproject_axi_mulg8j_DSP48_0_U/p_reg0 is absorbed into DSP mul_ln1118_16_reg_6122_reg.
+DSP Report: Generating DSP mul_ln1118_17_reg_6127_reg, operation Mode is: (A''*B'')'.
+DSP Report: register tmp_106_i_reg_5947_reg is absorbed into DSP mul_ln1118_17_reg_6127_reg.
+DSP Report: register myproject_axi_mulg8j_U33/myproject_axi_mulg8j_DSP48_0_U/b_reg_reg is absorbed into DSP mul_ln1118_17_reg_6127_reg.
+DSP Report: register trunc_ln160_1_reg_5877_reg is absorbed into DSP mul_ln1118_17_reg_6127_reg.
+DSP Report: register myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg is absorbed into DSP mul_ln1118_17_reg_6127_reg.
+DSP Report: register mul_ln1118_17_reg_6127_reg is absorbed into DSP mul_ln1118_17_reg_6127_reg.
+DSP Report: register myproject_axi_mulg8j_U33/myproject_axi_mulg8j_DSP48_0_U/p_reg_reg is absorbed into DSP mul_ln1118_17_reg_6127_reg.
+DSP Report: operator myproject_axi_mulg8j_U33/myproject_axi_mulg8j_DSP48_0_U/p_reg0 is absorbed into DSP mul_ln1118_17_reg_6127_reg.
+DSP Report: Generating DSP mul_ln1118_18_reg_6132_reg, operation Mode is: (A''*B'')'.
+DSP Report: register tmp_107_i_reg_5952_reg is absorbed into DSP mul_ln1118_18_reg_6132_reg.
+DSP Report: register myproject_axi_mulg8j_U34/myproject_axi_mulg8j_DSP48_0_U/b_reg_reg is absorbed into DSP mul_ln1118_18_reg_6132_reg.
+DSP Report: register trunc_ln160_1_reg_5877_reg is absorbed into DSP mul_ln1118_18_reg_6132_reg.
+DSP Report: register myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg is absorbed into DSP mul_ln1118_18_reg_6132_reg.
+DSP Report: register mul_ln1118_18_reg_6132_reg is absorbed into DSP mul_ln1118_18_reg_6132_reg.
+DSP Report: register myproject_axi_mulg8j_U34/myproject_axi_mulg8j_DSP48_0_U/p_reg_reg is absorbed into DSP mul_ln1118_18_reg_6132_reg.
+DSP Report: operator myproject_axi_mulg8j_U34/myproject_axi_mulg8j_DSP48_0_U/p_reg0 is absorbed into DSP mul_ln1118_18_reg_6132_reg.
+DSP Report: Generating DSP mul_ln1118_19_reg_6137_reg, operation Mode is: (A''*B'')'.
+DSP Report: register tmp_108_i_reg_5957_reg is absorbed into DSP mul_ln1118_19_reg_6137_reg.
+DSP Report: register myproject_axi_mulg8j_U35/myproject_axi_mulg8j_DSP48_0_U/b_reg_reg is absorbed into DSP mul_ln1118_19_reg_6137_reg.
+DSP Report: register trunc_ln160_1_reg_5877_reg is absorbed into DSP mul_ln1118_19_reg_6137_reg.
+DSP Report: register myproject_axi_mulg8j_U20/myproject_axi_mulg8j_DSP48_0_U/a_reg_reg is absorbed into DSP mul_ln1118_19_reg_6137_reg.
+DSP Report: register mul_ln1118_19_reg_6137_reg is absorbed into DSP mul_ln1118_19_reg_6137_reg.
+DSP Report: register myproject_axi_mulg8j_U35/myproject_axi_mulg8j_DSP48_0_U/p_reg_reg is absorbed into DSP mul_ln1118_19_reg_6137_reg.
+DSP Report: operator myproject_axi_mulg8j_U35/myproject_axi_mulg8j_DSP48_0_U/p_reg0 is absorbed into DSP mul_ln1118_19_reg_6137_reg.
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'select_ln160_2_reg_5835_reg[3]' (FDRE) to 'select_ln160_2_reg_5835_reg[2]'
+INFO: [Synth 8-3886] merging instance 'select_ln160_2_reg_5835_reg[2]' (FDRE) to 'select_ln160_2_reg_5835_reg[1]'
+INFO: [Synth 8-3886] merging instance 'select_ln160_2_reg_5835_reg[1]' (FDRE) to 'select_ln160_2_reg_5835_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\select_ln160_2_reg_5835_reg[0] )
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_reg[8]' (FDE) to 'sub_ln160_3_reg_5840_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_reg[7]' (FDE) to 'sub_ln160_3_reg_5840_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_reg[6]' (FDE) to 'sub_ln160_3_reg_5840_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_reg[5]' (FDE) to 'sub_ln160_3_reg_5840_reg[4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\sub_ln160_3_reg_5840_reg[4] )
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_reg[3]' (FDE) to 'sub_ln160_3_reg_5840_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_reg[2]' (FDE) to 'sub_ln160_3_reg_5840_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sub_ln160_3_reg_5840_reg[1] )
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter3_reg_reg[8]' (FDE) to 'sub_ln160_3_reg_5840_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter3_reg_reg[7]' (FDE) to 'sub_ln160_3_reg_5840_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter3_reg_reg[6]' (FDE) to 'sub_ln160_3_reg_5840_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter3_reg_reg[5]' (FDE) to 'sub_ln160_3_reg_5840_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter3_reg_reg[4]' (FDE) to 'sub_ln160_3_reg_5840_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter3_reg_reg[3]' (FDE) to 'sub_ln160_3_reg_5840_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter3_reg_reg[2]' (FDE) to 'sub_ln160_3_reg_5840_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter3_reg_reg[1]' (FDE) to 'sub_ln160_3_reg_5840_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter4_reg_reg[8]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter4_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter4_reg_reg[7]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter4_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter4_reg_reg[6]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter4_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter4_reg_reg[5]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter4_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter4_reg_reg[3]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter4_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter4_reg_reg[2]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter4_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter5_reg_reg[8]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter5_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter5_reg_reg[7]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter5_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter5_reg_reg[6]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter5_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter5_reg_reg[5]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter5_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter5_reg_reg[3]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter5_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter5_reg_reg[2]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter5_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter6_reg_reg[8]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter6_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter6_reg_reg[7]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter6_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter6_reg_reg[6]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter6_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter6_reg_reg[5]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter6_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter6_reg_reg[3]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter6_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter6_reg_reg[2]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter6_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter7_reg_reg[8]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter7_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter7_reg_reg[7]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter7_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter7_reg_reg[6]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter7_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter7_reg_reg[5]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter7_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter7_reg_reg[3]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter7_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter7_reg_reg[2]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter7_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter8_reg_reg[8]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter8_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter8_reg_reg[7]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter8_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter8_reg_reg[6]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter8_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter8_reg_reg[5]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter8_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter8_reg_reg[3]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter8_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter8_reg_reg[2]' (FDE) to 'sub_ln160_3_reg_5840_pp0_iter8_reg_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sub_ln160_3_reg_5840_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\sub_ln160_3_reg_5840_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sub_ln160_3_reg_5840_reg[1] )
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter4_reg_reg[4]' (FDE) to 'sub_ln160_3_reg_5840_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter4_reg_reg[1]' (FDE) to 'sub_ln160_3_reg_5840_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\sub_ln160_3_reg_5840_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sub_ln160_3_reg_5840_reg[1] )
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter5_reg_reg[4]' (FDE) to 'sub_ln160_3_reg_5840_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter5_reg_reg[1]' (FDE) to 'sub_ln160_3_reg_5840_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\sub_ln160_3_reg_5840_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sub_ln160_3_reg_5840_reg[1] )
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter6_reg_reg[4]' (FDE) to 'sub_ln160_3_reg_5840_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter6_reg_reg[1]' (FDE) to 'sub_ln160_3_reg_5840_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\sub_ln160_3_reg_5840_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sub_ln160_3_reg_5840_reg[1] )
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter7_reg_reg[4]' (FDE) to 'sub_ln160_3_reg_5840_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter7_reg_reg[1]' (FDE) to 'sub_ln160_3_reg_5840_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\sub_ln160_3_reg_5840_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sub_ln160_3_reg_5840_reg[1] )
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter8_reg_reg[4]' (FDE) to 'sub_ln160_3_reg_5840_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sub_ln160_3_reg_5840_pp0_iter8_reg_reg[1]' (FDE) to 'sub_ln160_3_reg_5840_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\sub_ln160_3_reg_5840_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sub_ln160_3_reg_5840_reg[1] )
+INFO: [Synth 8-4471] merging register 'tmp_1_reg_2649_reg[6:0]' into 'tmp_1_reg_2649_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource.v:1000]
+INFO: [Synth 8-4471] merging register 'tmp_1_reg_2649_reg[6:0]' into 'tmp_1_reg_2649_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource.v:1000]
+INFO: [Synth 8-4471] merging register 'tmp_1_reg_2649_reg[6:0]' into 'tmp_1_reg_2649_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource.v:1000]
+INFO: [Synth 8-4471] merging register 'tmp_1_reg_2649_reg[6:0]' into 'tmp_1_reg_2649_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource.v:1000]
+INFO: [Synth 8-4471] merging register 'tmp_1_reg_2649_reg[6:0]' into 'tmp_1_reg_2649_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource.v:1000]
+INFO: [Synth 8-4471] merging register 'tmp_1_reg_2649_reg[6:0]' into 'tmp_1_reg_2649_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource.v:1000]
+INFO: [Synth 8-4471] merging register 'tmp_1_reg_2649_reg[6:0]' into 'tmp_1_reg_2649_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource.v:1000]
+INFO: [Synth 8-4471] merging register 'tmp_1_reg_2649_reg[6:0]' into 'tmp_1_reg_2649_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource.v:1000]
+INFO: [Synth 8-4471] merging register 'tmp_1_reg_2649_reg[6:0]' into 'tmp_1_reg_2649_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource.v:1000]
+INFO: [Synth 8-4471] merging register 'tmp_1_reg_2649_reg[6:0]' into 'tmp_1_reg_2649_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource.v:1000]
+INFO: [Synth 8-4471] merging register 'tmp_1_reg_2649_reg[6:0]' into 'tmp_1_reg_2649_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource.v:1000]
+INFO: [Synth 8-4471] merging register 'tmp_1_reg_2649_reg[6:0]' into 'tmp_1_reg_2649_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource.v:1000]
+INFO: [Synth 8-4471] merging register 'tmp_1_reg_2649_reg[6:0]' into 'tmp_1_reg_2649_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource.v:1000]
+INFO: [Synth 8-4471] merging register 'tmp_1_reg_2649_reg[6:0]' into 'tmp_1_reg_2649_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource.v:1000]
+INFO: [Synth 8-4471] merging register 'tmp_1_reg_2649_reg[6:0]' into 'tmp_1_reg_2649_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource.v:1000]
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-4471] merging register 'tmp_4_reg_896_reg[6:0]' into 'tmp_4_reg_896_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_2.v:438]
+INFO: [Synth 8-4471] merging register 'tmp_4_reg_896_reg[6:0]' into 'tmp_4_reg_896_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_2.v:438]
+INFO: [Synth 8-4471] merging register 'tmp_4_reg_896_reg[6:0]' into 'tmp_4_reg_896_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_2.v:438]
+INFO: [Synth 8-4471] merging register 'tmp_4_reg_896_reg[6:0]' into 'tmp_4_reg_896_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_2.v:438]
+INFO: [Synth 8-4471] merging register 'tmp_4_reg_896_pp0_iter1_reg_reg[6:0]' into 'tmp_4_reg_896_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_2.v:439]
+INFO: [Synth 8-4471] merging register 'tmp_4_reg_896_pp0_iter1_reg_reg[6:0]' into 'tmp_4_reg_896_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_2.v:439]
+INFO: [Synth 8-4471] merging register 'tmp_4_reg_896_pp0_iter1_reg_reg[6:0]' into 'tmp_4_reg_896_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_2.v:439]
+INFO: [Synth 8-4471] merging register 'tmp_4_reg_896_pp0_iter1_reg_reg[6:0]' into 'tmp_4_reg_896_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_2.v:439]
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[105]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[98]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[98]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[91]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[91]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[84]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[84]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[77]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[77]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[76]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[76]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[75]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[70]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[75]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[71]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[75]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[72]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[75]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[73]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[75]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[74]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[75]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[75]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[63]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[63]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[56]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[56]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[49]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[49]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[42]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[42]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[35]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[35]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[28]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[28]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[21]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[21]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[14]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[14]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[7]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[7]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[6]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[6]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[5]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[0]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[5]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[1]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[5]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[2]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[5]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[3]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[5]'
+INFO: [Synth 8-3886] merging instance 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[4]' (FDE) to 'dense_resource_U0/w8_V_U/dense_resource_w8_V_rom_U/q0_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dense_resource_U0/\w8_V_U/dense_resource_w8_V_rom_U /\q0_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dense_resource_U0/\tmp_1_reg_2649_reg[6] )
+INFO: [Synth 8-3886] merging instance 'dense_resource_2_U0/w11_V_U/dense_resource_2_lbW_rom_U/q0_reg[28]' (FDE) to 'dense_resource_2_U0/w11_V_U/dense_resource_2_lbW_rom_U/q0_reg[0]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dense_resource_2_U0/\w11_V_U/dense_resource_2_lbW_rom_U/q0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (relu_2_U0/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dense_resource_U0/\trunc_ln160_3_reg_2655_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dense_resource_2_U0/\trunc_ln76_reg_915_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dense_resource_U0/\mul_ln1118_reg_2740_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dense_resource_U0/\mul_ln1118_reg_2740_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\myproject_entry153_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\myproject_entry153_U0/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (relu_1_U0/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-4471] merging register 'myproject_axi_mulocq_U570/myproject_axi_mulocq_DSP48_1_U/a_reg_reg[17:0]' into 'myproject_axi_mulocq_U569/myproject_axi_mulocq_DSP48_1_U/a_reg_reg[17:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulocq.v:19]
+INFO: [Synth 8-4471] merging register 'myproject_axi_mulocq_U571/myproject_axi_mulocq_DSP48_1_U/a_reg_reg[17:0]' into 'myproject_axi_mulocq_U569/myproject_axi_mulocq_DSP48_1_U/a_reg_reg[17:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulocq.v:19]
+INFO: [Synth 8-4471] merging register 'myproject_axi_mulocq_U572/myproject_axi_mulocq_DSP48_1_U/a_reg_reg[17:0]' into 'myproject_axi_mulocq_U569/myproject_axi_mulocq_DSP48_1_U/a_reg_reg[17:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulocq.v:19]
+INFO: [Synth 8-4471] merging register 'myproject_axi_mulocq_U573/myproject_axi_mulocq_DSP48_1_U/a_reg_reg[17:0]' into 'myproject_axi_mulocq_U569/myproject_axi_mulocq_DSP48_1_U/a_reg_reg[17:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi_mulocq.v:19]
+DSP Report: Generating DSP mul_ln1118_reg_521_reg, operation Mode is: (A''*B'')'.
+DSP Report: register exp_res_0_V_reg_455_pp0_iter5_reg_reg is absorbed into DSP mul_ln1118_reg_521_reg.
+DSP Report: register myproject_axi_mulocq_U569/myproject_axi_mulocq_DSP48_1_U/b_reg_reg is absorbed into DSP mul_ln1118_reg_521_reg.
+DSP Report: register inv_exp_sum_V_reg_482_reg is absorbed into DSP mul_ln1118_reg_521_reg.
+DSP Report: register myproject_axi_mulocq_U569/myproject_axi_mulocq_DSP48_1_U/a_reg_reg is absorbed into DSP mul_ln1118_reg_521_reg.
+DSP Report: register mul_ln1118_reg_521_reg is absorbed into DSP mul_ln1118_reg_521_reg.
+DSP Report: register myproject_axi_mulocq_U569/myproject_axi_mulocq_DSP48_1_U/p_reg_reg is absorbed into DSP mul_ln1118_reg_521_reg.
+DSP Report: operator myproject_axi_mulocq_U569/myproject_axi_mulocq_DSP48_1_U/p_reg0 is absorbed into DSP mul_ln1118_reg_521_reg.
+DSP Report: Generating DSP mul_ln1118_1_reg_526_reg, operation Mode is: (ACIN2*B'')'.
+DSP Report: register exp_res_1_V_reg_461_pp0_iter5_reg_reg is absorbed into DSP mul_ln1118_1_reg_526_reg.
+DSP Report: register myproject_axi_mulocq_U570/myproject_axi_mulocq_DSP48_1_U/b_reg_reg is absorbed into DSP mul_ln1118_1_reg_526_reg.
+DSP Report: register myproject_axi_mulocq_U569/myproject_axi_mulocq_DSP48_1_U/a_reg_reg is absorbed into DSP mul_ln1118_1_reg_526_reg.
+DSP Report: register mul_ln1118_1_reg_526_reg is absorbed into DSP mul_ln1118_1_reg_526_reg.
+DSP Report: register myproject_axi_mulocq_U570/myproject_axi_mulocq_DSP48_1_U/p_reg_reg is absorbed into DSP mul_ln1118_1_reg_526_reg.
+DSP Report: operator myproject_axi_mulocq_U570/myproject_axi_mulocq_DSP48_1_U/p_reg0 is absorbed into DSP mul_ln1118_1_reg_526_reg.
+DSP Report: Generating DSP mul_ln1118_2_reg_531_reg, operation Mode is: (A''*B'')'.
+DSP Report: register exp_res_2_V_reg_437_pp0_iter5_reg_reg is absorbed into DSP mul_ln1118_2_reg_531_reg.
+DSP Report: register myproject_axi_mulocq_U571/myproject_axi_mulocq_DSP48_1_U/b_reg_reg is absorbed into DSP mul_ln1118_2_reg_531_reg.
+DSP Report: register inv_exp_sum_V_reg_482_reg is absorbed into DSP mul_ln1118_2_reg_531_reg.
+DSP Report: register myproject_axi_mulocq_U569/myproject_axi_mulocq_DSP48_1_U/a_reg_reg is absorbed into DSP mul_ln1118_2_reg_531_reg.
+DSP Report: register mul_ln1118_2_reg_531_reg is absorbed into DSP mul_ln1118_2_reg_531_reg.
+DSP Report: register myproject_axi_mulocq_U571/myproject_axi_mulocq_DSP48_1_U/p_reg_reg is absorbed into DSP mul_ln1118_2_reg_531_reg.
+DSP Report: operator myproject_axi_mulocq_U571/myproject_axi_mulocq_DSP48_1_U/p_reg0 is absorbed into DSP mul_ln1118_2_reg_531_reg.
+DSP Report: Generating DSP mul_ln1118_3_reg_536_reg, operation Mode is: (A''*B'')'.
+DSP Report: register exp_res_3_V_reg_443_pp0_iter5_reg_reg is absorbed into DSP mul_ln1118_3_reg_536_reg.
+DSP Report: register myproject_axi_mulocq_U572/myproject_axi_mulocq_DSP48_1_U/b_reg_reg is absorbed into DSP mul_ln1118_3_reg_536_reg.
+DSP Report: register inv_exp_sum_V_reg_482_reg is absorbed into DSP mul_ln1118_3_reg_536_reg.
+DSP Report: register myproject_axi_mulocq_U569/myproject_axi_mulocq_DSP48_1_U/a_reg_reg is absorbed into DSP mul_ln1118_3_reg_536_reg.
+DSP Report: register mul_ln1118_3_reg_536_reg is absorbed into DSP mul_ln1118_3_reg_536_reg.
+DSP Report: register myproject_axi_mulocq_U572/myproject_axi_mulocq_DSP48_1_U/p_reg_reg is absorbed into DSP mul_ln1118_3_reg_536_reg.
+DSP Report: operator myproject_axi_mulocq_U572/myproject_axi_mulocq_DSP48_1_U/p_reg0 is absorbed into DSP mul_ln1118_3_reg_536_reg.
+DSP Report: Generating DSP mul_ln1118_4_reg_541_reg, operation Mode is: (A''*B'')'.
+DSP Report: register exp_res_4_V_reg_449_pp0_iter5_reg_reg is absorbed into DSP mul_ln1118_4_reg_541_reg.
+DSP Report: register myproject_axi_mulocq_U573/myproject_axi_mulocq_DSP48_1_U/b_reg_reg is absorbed into DSP mul_ln1118_4_reg_541_reg.
+DSP Report: register inv_exp_sum_V_reg_482_reg is absorbed into DSP mul_ln1118_4_reg_541_reg.
+DSP Report: register myproject_axi_mulocq_U569/myproject_axi_mulocq_DSP48_1_U/a_reg_reg is absorbed into DSP mul_ln1118_4_reg_541_reg.
+DSP Report: register mul_ln1118_4_reg_541_reg is absorbed into DSP mul_ln1118_4_reg_541_reg.
+DSP Report: register myproject_axi_mulocq_U573/myproject_axi_mulocq_DSP48_1_U/p_reg_reg is absorbed into DSP mul_ln1118_4_reg_541_reg.
+DSP Report: operator myproject_axi_mulocq_U573/myproject_axi_mulocq_DSP48_1_U/p_reg0 is absorbed into DSP mul_ln1118_4_reg_541_reg.
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_reg[6:0]' into 'tmp_9_reg_3144_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1195]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' into 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1196]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' into 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1196]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' into 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1196]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' into 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1196]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' into 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1196]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' into 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1196]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' into 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1196]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' into 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1196]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' into 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1196]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' into 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1196]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' into 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1196]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' into 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1196]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' into 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1196]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' into 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1196]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' into 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1196]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' into 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1196]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' into 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1196]
+INFO: [Synth 8-4471] merging register 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' into 'tmp_9_reg_3144_pp0_iter1_reg_reg[6:0]' [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/dense_resource_1.v:1196]
+INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dense_resource_1_U0/\w5_V_U/dense_resource_1_hbi_rom_U /\q0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (relu_U0/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (softmax_latency_U0/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dense_resource_1_U0/\trunc_ln76_reg_3163_reg[0] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dense_resource_1_U0/trunc_ln708_117_reg_3368_reg__1)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dense_resource_1_U0/i_2/\acc_V_18_031_reg_1294_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dense_resource_1_U0/i_2/\acc_V_9_049_reg_1168_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dense_resource_1_U0/trunc_ln708_117_reg_3368_reg__8)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (layer5_out_18_V_1_U/\U_fifo_w16_d2_A_ram/SRL_SIG_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (layer5_out_18_V_1_U/\U_fifo_w16_d2_A_ram/SRL_SIG_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (layer5_out_9_V_1_U/\U_fifo_w16_d2_A_ram/SRL_SIG_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (layer5_out_9_V_1_U/\U_fifo_w16_d2_A_ram/SRL_SIG_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (layer5_out_18_V_1_U/\U_fifo_w16_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (layer5_out_18_V_1_U/\U_fifo_w16_d2_A_ram/SRL_SIG_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (layer5_out_9_V_1_U/\U_fifo_w16_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (layer5_out_9_V_1_U/\U_fifo_w16_d2_A_ram/SRL_SIG_reg[1][6] )
+WARNING: [Synth 8-3936] Found unconnected internal register 'lshr_ln958_reg_1430_reg' and it is trimmed from '32' to '26' bits. [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi.v:1130]
+WARNING: [Synth 8-3936] Found unconnected internal register 'shl_ln958_reg_1435_reg' and it is trimmed from '64' to '26' bits. [/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.srcs/sources_1/bd/design_1/ipshared/0bab/hdl/verilog/myproject_axi.v:1131]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (myproject_axi_fpeqcK_U856/\myproject_axi_ap_fpext_1_no_dsp_32_u/U0 /i_synth/\FLT_TO_FLT_OP.SPD.OP/OUTPUT/RESULT_REG.NORMAL.mant_op_reg[28] )
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (myproject_axi_lshtde_U859/\dout_array_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (myproject_axi_shludo_U860/\dout_array_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\or_ln_reg_1405_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\shl_ln_reg_1273_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\empty_37_reg_1278_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\shl_ln_reg_1273_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\empty_37_reg_1278_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\shl_ln_reg_1273_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\empty_37_reg_1278_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\shl_ln_reg_1273_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icmp_ln203_reg_1283_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\empty_37_reg_1278_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\select_ln964_reg_1450_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\select_ln964_reg_1450_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\select_ln964_reg_1450_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\select_ln964_reg_1450_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\select_ln964_reg_1450_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\select_ln964_reg_1450_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\select_ln964_reg_1450_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lshr_ln958_reg_1430_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\icmp_ln203_reg_1283_pp0_iter7_reg_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module myproject_axi_AXILiteS_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module myproject_axi_AXILiteS_s_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:03:32 . Memory (MB): peak = 2394.719 ; gain = 600.934 ; free physical = 251 ; free virtual = 1126
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------------+------------+----------+
+|      |RTL Partition         |Replication |Instances |
++------+----------------------+------------+----------+
+|1     |dense_resource_3__GB0 |           1|     10695|
+|2     |dense_resource_3__GB1 |           1|       623|
+|3     |myproject__GCB0       |           1|     21405|
+|4     |myproject__GCB1       |           1|     16178|
+|5     |myproject__GCB2       |           1|     14860|
+|6     |myproject_axi__GC0    |           1|      6171|
++------+----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:57 ; elapsed = 00:03:41 . Memory (MB): peak = 2394.719 ; gain = 600.934 ; free physical = 153 ; free virtual = 998
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/grp_myproject_fu_266i_2_3/layer7_out_18_V_1_U/\U_fifo_w6_d2_A_ram/SRL_SIG_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/grp_myproject_fu_266i_2_3/layer7_out_9_V_1_U/\U_fifo_w6_d2_A_ram/SRL_SIG_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/grp_myproject_fu_266i_2_3/layer7_out_18_V_1_U/\U_fifo_w6_d2_A_ram/SRL_SIG_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/grp_myproject_fu_266i_2_3/layer7_out_9_V_1_U/\U_fifo_w6_d2_A_ram/SRL_SIG_reg[1][0] )
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:04:00 . Memory (MB): peak = 2424.852 ; gain = 631.066 ; free physical = 222 ; free virtual = 928
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |myproject__GCB2    |           1|     14849|
+|2     |myproject_axi__GC0 |           1|      6168|
+|3     |myproject_axi_GT0  |           1|     29323|
+|4     |myproject_axi_GT1  |           1|     19116|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_2_0/\trunc_ln583_reg_1221_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_2_0/\trunc_ln583_reg_1221_pp0_iter4_reg_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_2_0/\trunc_ln583_reg_1221_pp0_iter4_reg_reg[14] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:20 ; elapsed = 00:04:18 . Memory (MB): peak = 2436.777 ; gain = 642.992 ; free physical = 166 ; free virtual = 552
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |myproject__GCB2    |           1|      7947|
+|2     |myproject_axi__GC0 |           1|      3199|
+|3     |myproject_axi_GT0  |           1|     14597|
+|4     |myproject_axi_GT1  |           1|      9150|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_myproject_fu_266/dense_resource_U0/acc_V_0_080_reg_766_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_myproject_fu_266/dense_resource_U0/acc_V_0_080_reg_766_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\grp_myproject_fu_266/dense_resource_U0/acc_V_0_080_reg_766_reg[12] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6064] Net \grp_myproject_fu_266/dense_resource_3_U0/lshr_ln160_reg_5860 [15] is driving 240 big block pins (URAM, BRAM and DSP loads). Created 24 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:28 ; elapsed = 00:04:26 . Memory (MB): peak = 2436.777 ; gain = 642.992 ; free physical = 160 ; free virtual = 536
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:28 ; elapsed = 00:04:26 . Memory (MB): peak = 2436.777 ; gain = 642.992 ; free physical = 159 ; free virtual = 535
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:04:29 . Memory (MB): peak = 2436.777 ; gain = 642.992 ; free physical = 170 ; free virtual = 535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:04:30 . Memory (MB): peak = 2436.777 ; gain = 642.992 ; free physical = 166 ; free virtual = 535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:32 ; elapsed = 00:04:30 . Memory (MB): peak = 2436.777 ; gain = 642.992 ; free physical = 157 ; free virtual = 516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:32 ; elapsed = 00:04:30 . Memory (MB): peak = 2436.777 ; gain = 642.992 ; free physical = 155 ; free virtual = 518
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |  1199|
+|2     |DSP48E1    |    19|
+|3     |DSP48E1_1  |     1|
+|4     |DSP48E1_2  |     1|
+|5     |LUT1       |   182|
+|6     |LUT2       |  2988|
+|7     |LUT3       |  2106|
+|8     |LUT4       |  3668|
+|9     |LUT5       |  1783|
+|10    |LUT6       |  7479|
+|11    |MUXCY      |     4|
+|12    |MUXF7      |   104|
+|13    |MUXF8      |    25|
+|14    |RAMB18E1_2 |     2|
+|15    |RAMB18E1_3 |     1|
+|16    |RAMB18E1_4 |     1|
+|17    |SRL16E     |    74|
+|18    |FDRE       | 14144|
+|19    |FDSE       |  1010|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:32 ; elapsed = 00:04:30 . Memory (MB): peak = 2436.777 ; gain = 642.992 ; free physical = 155 ; free virtual = 518
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 140 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:27 ; elapsed = 00:04:29 . Memory (MB): peak = 2436.777 ; gain = 472.242 ; free physical = 3893 ; free virtual = 4519
+Synthesis Optimization Complete : Time (s): cpu = 00:01:35 ; elapsed = 00:04:36 . Memory (MB): peak = 2436.777 ; gain = 642.992 ; free physical = 3890 ; free virtual = 4520
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2436.777 ; gain = 0.000 ; free physical = 3862 ; free virtual = 4507
+INFO: [Netlist 29-17] Analyzing 1357 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2480.879 ; gain = 0.000 ; free physical = 3778 ; free virtual = 4456
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+499 Infos, 210 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:42 ; elapsed = 00:04:48 . Memory (MB): peak = 2480.879 ; gain = 938.598 ; free physical = 3942 ; free virtual = 4621
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2480.879 ; gain = 0.000 ; free physical = 3933 ; free virtual = 4622
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.runs/design_1_myproject_axi_0_7_synth_1/design_1_myproject_axi_0_7.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_myproject_axi_0_7, cache-ID = 8cce864770230656
+INFO: [Coretcl 2-1174] Renamed 589 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2504.891 ; gain = 0.000 ; free physical = 3758 ; free virtual = 4674
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/dma_test_pynq_v2/dma_test_pynq.runs/design_1_myproject_axi_0_7_synth_1/design_1_myproject_axi_0_7.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_myproject_axi_0_7_utilization_synth.rpt -pb design_1_myproject_axi_0_7_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 31 18:03:07 2021...

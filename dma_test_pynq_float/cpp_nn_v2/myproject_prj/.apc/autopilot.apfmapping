@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="myproject_axi.cpp" path="/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/cpp_nn_v1/firmware/myproject_axi.cpp"/>
+    <originFiles name="myproject.cpp" path="/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/cpp_nn_v1/firmware/myproject.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="myproject_test.cpp" path="/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/cpp_nn_v1/myproject_test.cpp"/>
+    <originFiles name="weights" path="/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/cpp_nn_v1/firmware/weights"/>
+    <originFiles name="tb_data" path="/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/cpp_nn_v1/tb_data"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
