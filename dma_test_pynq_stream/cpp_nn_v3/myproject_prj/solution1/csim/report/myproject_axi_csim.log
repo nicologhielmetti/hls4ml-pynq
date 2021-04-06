@@ -1,0 +1,15 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../firmware/myproject_axi.cpp in debug mode
+csim.mk:87: recipe for target 'obj/myproject_axi.o' failed
+In file included from ../../../../firmware/myproject_axi.cpp:1:0:
+../../../../firmware/myproject_axi.h: In constructor ‘out_struct::out_struct(const float&, const ap_uint<1>&)’:
+../../../../firmware/myproject_axi.h:19:62: error: request for member ‘data’ in ‘(out_struct*)this’, which is of pointer type ‘out_struct*’ (maybe you meant to use ‘->’ ?)
+   out_struct(const float& data, const ap_uint<1>& last){this.data = data; this.last = last};
+                                                              ^~~~
+../../../../firmware/myproject_axi.h:19:80: error: request for member ‘last’ in ‘(out_struct*)this’, which is of pointer type ‘out_struct*’ (maybe you meant to use ‘->’ ?)
+   out_struct(const float& data, const ap_uint<1>& last){this.data = data; this.last = last};
+                                                                                ^~~~
+make: *** [obj/myproject_axi.o] Error 1
+ERR: [SIM 100] CSim file generation failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

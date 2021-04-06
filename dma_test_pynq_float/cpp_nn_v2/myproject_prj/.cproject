@@ -173,7 +173,7 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.1829222848" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/cpp_nn_v1"/>
+                                <listOptionValue builtIn="false" value="/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/cpp_nn_v2"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.2/include/etc"/>
                                 								
@@ -203,7 +203,7 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.565674162" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/cpp_nn_v1"/>
+                                <listOptionValue builtIn="false" value="/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/cpp_nn_v2"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.2/include/etc"/>
                                 								
@@ -233,7 +233,7 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.1953051396" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/cpp_nn_v1"/>
+                                <listOptionValue builtIn="false" value="/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/cpp_nn_v2"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.2/include/etc"/>
                                 								
@@ -419,7 +419,7 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.2121199798" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/cpp_nn_v1"/>
+                                <listOptionValue builtIn="false" value="/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/cpp_nn_v2"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.2/include/etc"/>
                                 								
@@ -449,7 +449,7 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.73141763" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/cpp_nn_v1"/>
+                                <listOptionValue builtIn="false" value="/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/cpp_nn_v2"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.2/include/etc"/>
                                 								
@@ -479,7 +479,7 @@
                             							
                             <option id="gnu.cpp.compiler.option.include.paths.1792793060" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
                                 								
-                                <listOptionValue builtIn="false" value="/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/cpp_nn_v1"/>
+                                <listOptionValue builtIn="false" value="/home/nicolo/cernbox/pynq_nn_axis/dma_test_pynq_float/cpp_nn_v2"/>
                                 								
                                 <listOptionValue builtIn="false" value="/tools/Xilinx/Vivado/2019.2/include/etc"/>
                                 								
